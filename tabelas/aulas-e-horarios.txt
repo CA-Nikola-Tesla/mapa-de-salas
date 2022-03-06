@@ -1,0 +1,118 @@
+################################
+#  Formato para mapa de salas  #
+################################
+
+#	Colunas:
+#		turma
+#		dia da semana
+#		horário
+#		aula
+#		sala (se tem mais de uma, separar por vírgula)
+#		mapa (se houver mais de uma sala, separar por virgula, mesmo que seja o mesmo bloco, repetir)
+#		nome da disciplina
+#		nome do professor (se mais de uma sala, separar por virgula, mesmo que seja o mesmo professor, repetir)
+#		nome das salas (se tem mais de uma sala, separar por virgula)
+#
+#	O mapa será um arquivo <nome-do-mapa>.svg que será carregado e exibido na página.
+#	Neste SVG, cada elemento do tipo "path" deve ter como id o nome da sala correspondente.
+#	O elemento do tipo "path" que corresponder à sala será visível, o resto não.
+
+
+####################################################################
+#  Horários de aula para 2022.1 das turmas de Engenharia Elétrica  #
+####################################################################
+
+# turma   dia da semana  .- aula       .- horario  .-- primeira sala     .- bloco da primeira sala                                                                 professor da segunda sala --.                                   nome da segunda sala -.
+#  /          |         |             |           |     . segunda sala  |                       .- bloco da segunda sala   .- disciplina       professor da primeira sala ----.                 |         nome da primeira sala -.                        |
+# /           |         |             |           |    |                |                      |                          /                                                    |                |                                 |                       |
+ee1;	segunda-feira;	1;	18:50 - 19:35;	c206,d216;	bloco-c-mezanino,	bloco-d-mezanino;	ELETR - ELETRICIDADE;					ALBERTO SHIGA,ALEXANDRE VENTIERI;	SALA DE AULA (518) - MEZANINO,SALA DE AULA/LAB (D3) - MEZANINO
+ee1;	segunda-feira;	2;	19:35 - 20:20;	c206,d216;	bloco-c-mezanino,	bloco-d-mezanino;	ELETR - ELETRICIDADE;					ALBERTO SHIGA,ALEXANDRE VENTIERI;	SALA DE AULA (518) - MEZANINO,SALA DE AULA/LAB (D3) - MEZANINO
+ee1;	segunda-feira;	3;	20:20 - 21:05;	c206,d216;	bloco-c-mezanino,	bloco-d-mezanino;	ELETR - ELETRICIDADE;					ALBERTO SHIGA,ALEXANDRE VENTIERI;	SALA DE AULA (518) - MEZANINO,SALA DE AULA/LAB (D3) - MEZANINO
+ee1;	segunda-feira;	4;	21:20 - 22:05;	c206,d216;	bloco-c-mezanino,	bloco-d-mezanino;	ELETR - ELETRICIDADE;					ALBERTO SHIGA,ALEXANDRE VENTIERI;	SALA DE AULA (518) - MEZANINO,SALA DE AULA/LAB (D3) - MEZANINO
+ee1;	segunda-feira;	5;	22:05 - 22:50;	c206,d216;	bloco-c-mezanino,	bloco-d-mezanino;	ELETR - ELETRICIDADE;					ALBERTO SHIGA,ALEXANDRE VENTIERI;	SALA DE AULA (518) - MEZANINO,SALA DE AULA/LAB (D3) - MEZANINO
+	
+ee1;	terça-feira;	1;	18:50 - 19:35;	a326,a356;	bloco-a-superior,	bloco-a-superior;	FITE1 - FÍSICA TEÓRICA E EXPERIMENTAL 1;		ASTROGILDO JUNQUEIRA,WILLIAM SOARES;	LABORATÓRIO DE FÍSICA - PISO SUPERIOR,LABORATÓRIO DE FÍSICA - PISO SUPERIOR
+ee1;	terça-feira;	2;	19:35 - 20:20;	a326,a356;	bloco-a-superior,	bloco-a-superior;	FITE1 - FÍSICA TEÓRICA E EXPERIMENTAL 1;		ASTROGILDO JUNQUEIRA,WILLIAM SOARES;	LABORATÓRIO DE FÍSICA - PISO SUPERIOR,LABORATÓRIO DE FÍSICA - PISO SUPERIOR
+ee1;	terça-feira;	3;	20:20 - 21:05;	a356;		bloco-a-superior;				FITE1 - FÍSICA TEÓRICA E EXPERIMENTAL 1;		WILLIAM SOARES;				LABORATÓRIO DE FÍSICA - PISO SUPERIOR
+ee1;	terça-feira;	4;	21:20 - 22:05;	a356;		bloco-a-superior;				FITE1 - FÍSICA TEÓRICA E EXPERIMENTAL 1;		WILLIAM SOARES;				LABORATÓRIO DE FÍSICA - PISO SUPERIOR
+ee1;	terça-feira;	5;	22:05 - 22:50;	a356;		bloco-a-superior;				FITE1 - FÍSICA TEÓRICA E EXPERIMENTAL 1;		WILLIAM SOARES;				LABORATÓRIO DE FÍSICA - PISO SUPERIOR
+	
+ee1;	quarta-feira;	1;	18:50 - 19:35;	a323;		bloco-a-superior;				CALC1 - CÁLCULO DIFERENCIAL E INTEGRAL 1;		FERNANDO PAVAN;				SALA DE AULA - PISO SUPERIOR
+ee1;	quarta-feira;	2;	19:35 - 20:20;	a323;		bloco-a-superior;				CALC1 - CÁLCULO DIFERENCIAL E INTEGRAL 1;		FERNANDO PAVAN;				SALA DE AULA - PISO SUPERIOR
+ee1;	quarta-feira;	3;	20:20 - 21:05;	a323;		bloco-a-superior;				CALC1 - CÁLCULO DIFERENCIAL E INTEGRAL 1;		FERNANDO PAVAN;				SALA DE AULA - PISO SUPERIOR
+ee1;	quarta-feira;	4;	21:20 - 22:05;	d219;		bloco-d-mezanino;				INEEL - INTRODUÇÃO À ENGENHARIA ELÉTRICA;		JACYRO GRAMULIA JR e TARCÍSIO LEAO;	LAB DE MÁQUINAS ELÉTRICAS (637) - MEZANINO
+ee1;	quarta-feira;	5;	22:05 - 22:50;	d219;		bloco-d-mezanino;				INEEL - INTRODUÇÃO À ENGENHARIA ELÉTRICA;		JACYRO GRAMULIA JR e TARCÍSIO LEAO;	LAB DE MÁQUINAS ELÉTRICAS (637) - MEZANINO
+
+ee1;	quinta-feira;	1;	18:50 - 19:35;	c202,c203;	bloco-c-mezanino,	bloco-c-mezanino;	DETAC - DESENHO TÉCNICO AUXILIADO POR COMPUTADOR;	DIEGO JOSÉ,DIEGO JOSÉ;			LAB DE ELETRICIDADE (511) - MEZANINO,LAB DE DIGITAIS (512) - MEZANINO
+ee1;	quinta-feira;	2;	19:35 - 20:20;	c202,c203;	bloco-c-mezanino,	bloco-c-mezanino;	DETAC - DESENHO TÉCNICO AUXILIADO POR COMPUTADOR;	DIEGO JOSÉ,DIEGO JOSÉ;			LAB DE ELETRICIDADE (511) - MEZANINO,LAB DE DIGITAIS (512) - MEZANINO
+ee1;	quinta-feira;	3;	20:20 - 21:05;	c202,c203;	bloco-c-mezanino,	bloco-c-mezanino;	DETAC - DESENHO TÉCNICO AUXILIADO POR COMPUTADOR;	DIEGO JOSÉ,DIEGO JOSÉ;			LAB DE ELETRICIDADE (511) - MEZANINO,LAB DE DIGITAIS (512) - MEZANINO
+
+ee1;	sexta-feira;	1;	18:50 - 19:35;	a323;		bloco-a-superior;				GAVET - GEOMETRIA ANALÍTICA E VETORIAL;			;					SALA DE AULA - PISO SUPERIOR
+ee1;	sexta-feira;	2;	19:35 - 20:20;	a323;		bloco-a-superior;				GAVET - GEOMETRIA ANALÍTICA E VETORIAL;			;					SALA DE AULA - PISO SUPERIOR
+ee1;	sexta-feira;	3;	20:20 - 21:05;	a323;		bloco-a-superior;				GAVET - GEOMETRIA ANALÍTICA E VETORIAL;			;					SALA DE AULA - PISO SUPERIOR
+ee1;	sexta-feira;	4;	21:20 - 22:05;	a323;		bloco-a-superior;				COMEX - COMUNICAÇÃO E EXPRESSÃO;			CLARA ORNELLAS;				SALA DE AULA - PISO SUPERIOR
+ee1;	sexta-feira;	5;	22:05 - 22:50;	a323;		bloco-a-superior;				COMEX - COMUNICAÇÃO E EXPRESSÃO;			CLARA ORNELLAS;				SALA DE AULA - PISO SUPERIOR
+
+########################
+
+ee3;	segunda-feira;	1;	18:50 - 19:35;	a323;		bloco-a-superior;				FISEL - FÍSICA TEÓRICA 2 - ELÉTRICA;			WILSON MATOS;				SALA DE AULA - PISO SUPERIOR
+ee3;	segunda-feira;	2;	19:35 - 20:20;	a323;		bloco-a-superior;				FISEL - FÍSICA TEÓRICA 2 - ELÉTRICA;			WILSON MATOS;				SALA DE AULA - PISO SUPERIOR
+ee3;	segunda-feira;	3;	20:20 - 21:05;	a323;		bloco-a-superior;				QUITE - QUÍMICA TEÓRICA E EXPERIMENTAL;			MARCIO MATSUMOTO;			SALA DE AULA - PISO SUPERIOR
+ee3;	segunda-feira;	4;	21:20 - 22:05;	a323;		bloco-a-superior;				QUITE - QUÍMICA TEÓRICA E EXPERIMENTAL;			MARCIO MATSUMOTO;			SALA DE AULA - PISO SUPERIOR
+ee3;	segunda-feira;	5;	22:05 - 22:50;	a323;		bloco-a-superior;				QUITE - QUÍMICA TEÓRICA E EXPERIMENTAL;			MARCIO MATSUMOTO;			SALA DE AULA - PISO SUPERIOR
+
+ee3;	terça-feira;	1;	18:50 - 19:35;	c206,c207;	bloco-c-mezanino,bloco-c-mezanino;		LIPRO -  LINGUAGEM DE PROGRAMAÇÃO;			ELAINE BUENO,PRISCILA CALIOPE;		SALA DE AULA (518) - MEZANINO,LABORAÓRIO DE INFORMÁTICA (517) - MEZANINO
+ee3;	terça-feira;	2;	19:35 - 20:20;	c206,c207;	bloco-c-mezanino,bloco-c-mezanino;		LIPRO -  LINGUAGEM DE PROGRAMAÇÃO;			ELAINE BUENO,PRISCILA CALIOPE;		SALA DE AULA (518) - MEZANINO,LABORAÓRIO DE INFORMÁTICA (517) - MEZANINO
+ee3;	terça-feira;	3;	20:20 - 21:05;	c206,c207;	bloco-c-mezanino,bloco-c-mezanino;		LIPRO -  LINGUAGEM DE PROGRAMAÇÃO;			ELAINE BUENO,PRISCILA CALIOPE;		SALA DE AULA (518) - MEZANINO,LABORAÓRIO DE INFORMÁTICA (517) - MEZANINO
+ee3;	terça-feira;	4;	21:20 - 22:05;	c206,c207;	bloco-c-mezanino,bloco-c-mezanino;		LIPRO -  LINGUAGEM DE PROGRAMAÇÃO;			ELAINE BUENO,PRISCILA CALIOPE;		SALA DE AULA (518) - MEZANINO,LABORAÓRIO DE INFORMÁTICA (517) - MEZANINO
+ee3;	terça-feira;	5;	22:05 - 22:50;	c206,c207;	bloco-c-mezanino,bloco-c-mezanino;		LIPRO -  LINGUAGEM DE PROGRAMAÇÃO;			ELAINE BUENO,PRISCILA CALIOPE;		SALA DE AULA (518) - MEZANINO,LABORAÓRIO DE INFORMÁTICA (517) - MEZANINO
+
+ee3;	quarta-feira;	1;	18:50 - 19:35;	c206,d216;	bloco-c-mezanino,bloco-d-mezanino;		ELOA2 - ELETRÔNICA 2;					HAROLDO GUIBU,JOSÉ CHRISTINO;		SALA DE AULA (518) - MEZANINO,SALA DE AULA/LAB (D3) - MEZANINO
+ee3;	quarta-feira;	2;	19:35 - 20:20;	c206,d216;	bloco-c-mezanino,bloco-d-mezanino;		ELOA2 - ELETRÔNICA 2;					HAROLDO GUIBU,JOSÉ CHRISTINO;		SALA DE AULA (518) - MEZANINO,SALA DE AULA/LAB (D3) - MEZANINO
+ee3;	quarta-feira;	3;	20:20 - 21:05;	c206,d216;	bloco-c-mezanino,bloco-d-mezanino;		ELOA2 - ELETRÔNICA 2;					HAROLDO GUIBU,JOSÉ CHRISTINO;		SALA DE AULA (518) - MEZANINO,SALA DE AULA/LAB (D3) - MEZANINO
+ee3;	quarta-feira;	4;	21:20 - 22:05;	c206,d216;	bloco-c-mezanino,bloco-d-mezanino;		ELOA2 - ELETRÔNICA 2;					HAROLDO GUIBU,JOSÉ CHRISTINO;		SALA DE AULA (518) - MEZANINO,SALA DE AULA/LAB (D3) - MEZANINO
+ee3;	quarta-feira;	5;	22:05 - 22:50;	c206,d216;	bloco-c-mezanino,bloco-d-mezanino;		ELOA2 - ELETRÔNICA 2;					HAROLDO GUIBU,JOSÉ CHRISTINO;		SALA DE AULA (518) - MEZANINO,SALA DE AULA/LAB (D3) - MEZANINO
+
+ee3;	quinta-feira;	1;	18:50 - 19:35;	c206;		bloco-c-mezanino;				CAPLE - CÁLCULO APLICADO À ELÉTRICA;			FULVIO PREVOT;				SALA DE AULA (518) - MEZANINO
+ee3;	quinta-feira;	2;	19:35 - 20:20;	c206;		bloco-c-mezanino;				CAPLE - CÁLCULO APLICADO À ELÉTRICA;			FULVIO PREVOT;				SALA DE AULA (518) - MEZANINO
+ee3;	quinta-feira;	3;	20:20 - 21:05;	c206;		bloco-c-mezanino;				ESTAP - ESTATÍSTICA APLICADA À PROBABILIDADE;		FULVIO PREVOT;				SALA DE AULA (518) - MEZANINO
+ee3;	quinta-feira;	4;	21:20 - 22:05;	c206;		bloco-c-mezanino;				ESTAP - ESTATÍSTICA APLICADA À PROBABILIDADE;		FULVIO PREVOT;				SALA DE AULA (518) - MEZANINO
+ee3;	quinta-feira;	5;	22:05 - 22:50;	c206;		bloco-c-mezanino;				ESTAP - ESTATÍSTICA APLICADA À PROBABILIDADE;		FULVIO PREVOT;				SALA DE AULA (518) - MEZANINO
+
+ee3;	sexta-feira;	1;	18:50 - 19:35;	c209;		bloco-c-mezanino;				CIEMA - CIÊNCIA DOS MATERIAIS;				SARA SANTOS;				SALA DE AULA (515) - MEZANINO
+ee3;	sexta-feira;	2;	19:35 - 20:20;	c209;		bloco-c-mezanino;				CIEMA - CIÊNCIA DOS MATERIAIS;				SARA SANTOS;				SALA DE AULA (515) - MEZANINO
+ee3;	sexta-feira;	3;	20:20 - 21:05;	e715;		bloco-e;					MECAB - MECÂNICA APLICADA BÁSICA;			GUSTAVO TAKEHARA;			LABORATÓRIO DE CAD/CAM/CNC
+ee3;	sexta-feira;	4;	21:20 - 22:05;	e715;		bloco-e;					MECAB - MECÂNICA APLICADA BÁSICA;			GUSTAVO TAKEHARA;			LABORATÓRIO DE CAD/CAM/CNC
+ee3;	sexta-feira;	5;	22:05 - 22:50;	e715;		bloco-e;					MECAB - MECÂNICA APLICADA BÁSICA;			GUSTAVO TAKEHARA;			LABORATÓRIO DE CAD/CAM/CNC
+
+########################
+
+ee5;	segunda-feira;	1;	18:50 - 19:35;	d215;		bloco-d-mezanino;				LUMIN - LUMINOTÉCNICA;					MARIO CAMBRAIA;				SALA DE AULA (640) - MEZANINO
+ee5;	segunda-feira;	2;	19:35 - 20:20;	d215;		bloco-d-mezanino;				LUMIN - LUMINOTÉCNICA;					MARIO CAMBRAIA;				SALA DE AULA (640) - MEZANINO
+ee5;	segunda-feira;	3;	20:20 - 21:05;	d215;		bloco-d-mezanino;				EMAG2 - ELETROMAGNETISMO 2;				ALAOR SACCOMANO;			SALA DE AULA (640) - MEZANINO
+ee5;	segunda-feira;	4;	21:20 - 22:05;	d215;		bloco-d-mezanino;				EMAG2 - ELETROMAGNETISMO 2;				ALAOR SACCOMANO;			SALA DE AULA (640) - MEZANINO
+ee5;	segunda-feira;	5;	22:05 - 22:50;	d215;		bloco-d-mezanino;				EMAG2 - ELETROMAGNETISMO 2;				ALAOR SACCOMANO;			SALA DE AULA (640) - MEZANINO
+
+ee5;	terça-feira;	1;	18:50 - 19:35;	c206,d212;	bloco-c-mezanino,bloco-d-mezanino;		CIEL2 - CIRCUITOS ELÉTRICOS 2;				ALEXANDRE VENTIERI,ALEXANDRE VENTIERI;	SALA DE AULA (518) - MEZANINO,SALA DE AULA/LAB (D3) - MEZANINO
+ee5;	terça-feira;	2;	19:35 - 20:20;	c206,d212;	bloco-c-mezanino,bloco-d-mezanino;		CIEL2 - CIRCUITOS ELÉTRICOS 2;				ALEXANDRE VENTIERI,ALEXANDRE VENTIERI;	SALA DE AULA (518) - MEZANINO,SALA DE AULA/LAB (D3) - MEZANINO
+ee5;	terça-feira;	3;	20:20 - 21:05;	c206,d212;	bloco-c-mezanino,bloco-d-mezanino;		CIEL2 - CIRCUITOS ELÉTRICOS 2;				ALEXANDRE VENTIERI,ALEXANDRE VENTIERI;	SALA DE AULA (518) - MEZANINO,SALA DE AULA/LAB (D3) - MEZANINO
+ee5;	terça-feira;	4;	21:20 - 22:05;	c206,d212;	bloco-c-mezanino,bloco-d-mezanino;		CIEL2 - CIRCUITOS ELÉTRICOS 2;				ALEXANDRE VENTIERI,ALEXANDRE VENTIERI;	SALA DE AULA (518) - MEZANINO,SALA DE AULA/LAB (D3) - MEZANINO
+ee5;	terça-feira;	5;	22:05 - 22:50;	c206,d212;	bloco-c-mezanino,bloco-d-mezanino;		CIEL2 - CIRCUITOS ELÉTRICOS 2;				ALEXANDRE VENTIERI,ALEXANDRE VENTIERI;	SALA DE AULA (518) - MEZANINO,SALA DE AULA/LAB (D3) - MEZANINO
+
+ee5;	quarta-feira;	1;	18:50 - 19:35;	d211,d114;	bloco-d-mezanino,bloco-d-terreo;		INSTI - INSTALAÇÕES ELÉTRICAS INDUSTRIAIS;		MARIO CAMBRAIA,JACYRO GRAMULIA JR;	SALA DE AULA (642) - MEZANINO,LAB DE INSTALAÇÕES ELÉTRICAS (604) - TÉRREO
+ee5;	quarta-feira;	2;	19:35 - 20:20;	d211,d114;	bloco-d-mezanino,bloco-d-terreo;		INSTI - INSTALAÇÕES ELÉTRICAS INDUSTRIAIS;		MARIO CAMBRAIA,JACYRO GRAMULIA JR;	SALA DE AULA (642) - MEZANINO,LAB DE INSTALAÇÕES ELÉTRICAS (604) - TÉRREO
+ee5;	quarta-feira;	3;	20:20 - 21:05;	d211,d114;	bloco-d-mezanino,bloco-d-terreo;		INSTI - INSTALAÇÕES ELÉTRICAS INDUSTRIAIS;		MARIO CAMBRAIA,JACYRO GRAMULIA JR;	SALA DE AULA (642) - MEZANINO,LAB DE INSTALAÇÕES ELÉTRICAS (604) - TÉRREO
+ee5;	quarta-feira;	4;	21:20 - 22:05;	d222;		bloco-d-mezanino;				ADMIN - TEORIA GERAL DA ADMINISTRAÇÃO;			ANTONIO FARICELLI;			SALA DE AULA (D4) - MEZANINO
+ee5;	quarta-feira;	5;	22:05 - 22:50;	d222;		bloco-d-mezanino;				ADMIN - TEORIA GERAL DA ADMINISTRAÇÃO;			ANTONIO FARICELLI;			SALA DE AULA (D4) - MEZANINO
+
+ee5;	quinta-feira;	1;	18:50 - 19:35;	d215,d117;	bloco-d-mezanino,bloco-d-terreo;		MAQUEL - MÁQUINAS ELÉTRICAS;				JOAO BRITO,WALTER RAGNEV;		SALA DE AULA (640) - MEZANINO,LAB DE GERAÇÃO E DISTR. (607) - TÉRREO
+ee5;	quinta-feira;	2;	19:35 - 20:20;	d215,d117;	bloco-d-mezanino,bloco-d-terreo;		MAQUEL - MÁQUINAS ELÉTRICAS;				JOAO BRITO,WALTER RAGNEV;		SALA DE AULA (640) - MEZANINO,LAB DE GERAÇÃO E DISTR. (607) - TÉRREO
+ee5;	quinta-feira;	3;	20:20 - 21:05;	d215,d117;	bloco-d-mezanino,bloco-d-terreo;		MAQUEL - MÁQUINAS ELÉTRICAS;				JOAO BRITO,WALTER RAGNEV;		SALA DE AULA (640) - MEZANINO,LAB DE GERAÇÃO E DISTR. (607) - TÉRREO
+ee5;	quinta-feira;	4;	21:20 - 22:05;	d215,d117;	bloco-d-mezanino,bloco-d-terreo;		MAQUEL - MÁQUINAS ELÉTRICAS;				JOAO BRITO,WALTER RAGNEV;		SALA DE AULA (640) - MEZANINO,LAB DE GERAÇÃO E DISTR. (607) - TÉRREO
+ee5;	quinta-feira;	5;	22:05 - 22:50;	d215,d117;	bloco-d-mezanino,bloco-d-terreo;		MAQUEL - MÁQUINAS ELÉTRICAS;				JOAO BRITO,WALTER RAGNEV;		SALA DE AULA (640) - MEZANINO,LAB DE GERAÇÃO E DISTR. (607) - TÉRREO
+
+ee5;	sexta-feira;	1;	18:50 - 19:35;	d222;		bloco-d-mezanino;				COMAE - COMANDO E ACIONAMENTO ELÉTRICOS;		OSMIR ADÃO e DOMINGOS NETO;		SALA DE AULA (D4) - MEZANINO
+ee5;	sexta-feira;	2;	19:35 - 20:20;	d222;		bloco-d-mezanino;				COMAE - COMANDO E ACIONAMENTO ELÉTRICOS;		OSMIR ADÃO e DOMINGOS NETO;		SALA DE AULA (D4) - MEZANINO
+ee5;	sexta-feira;	3;	20:20 - 21:05;	d222;		bloco-d-mezanino;				COMAE - COMANDO E ACIONAMENTO ELÉTRICOS;		OSMIR ADÃO e DOMINGOS NETO;		SALA DE AULA (D4) - MEZANINO
+ee5;	sexta-feira;	4;	21:20 - 22:05;	d222;		bloco-d-mezanino;				COMAE - COMANDO E ACIONAMENTO ELÉTRICOS;		OSMIR ADÃO e DOMINGOS NETO;		SALA DE AULA (D4) - MEZANINO
+ee5;	sexta-feira;	5;	22:05 - 22:50;	d222;		bloco-d-mezanino;				COMAE - COMANDO E ACIONAMENTO ELÉTRICOS;		OSMIR ADÃO e DOMINGOS NETO;		SALA DE AULA (D4) - MEZANINO
