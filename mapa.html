@@ -211,7 +211,7 @@
 							last_map = xhr.mapa;
 						} else {
 							console.log("map not found");
-							el("divmap").innerHTML += "<span class='error'>Mapa indisponível</span>";
+							el("divmap").innerHTML = "<br /><br /><span class='error'>Mapa indisponível</span>";
 						}
 						el("divsel").style.pointerEvents = "";
 						el("divsel").style.opacity = "1";
