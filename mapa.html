@@ -121,7 +121,11 @@
 	}
 
 	function hl_sala(idx, salas) {
-		var paths = el("divmap").getElementsByTagName("svg")[0].getElementsByTagName("path");
+		var svgs = el("divmap").getElementsByTagName("svg");
+		var paths = [];
+		if (svgs.length === 1)
+			paths = svgs[0].getElementsByTagName("path");
+
 		for (i = 0; i < paths.length; i++)
 			paths[i].style.opacity = "0";
 
@@ -129,7 +133,7 @@
 		if (path != null) {
 			path.style.opacity = "1";
 			path.scrollIntoView({ behavior: "smooth", block: "nearest" });
-		} else {
+		} else if (paths.length > 0) {
 			warn = document.createElement("span");
 			warn.innerHTML = "<span class='error'>Sala não mapeada<br /></span>";
 			el("divdesc").appendChild(warn);
@@ -212,6 +216,7 @@
 						} else {
 							console.log("map not found");
 							el("divmap").innerHTML = "<br /><br /><span class='error'>Mapa indisponível</span>";
+							hl_sala(this.idx, this.salas);
 							last_map = "";
 						}
 						el("divsel").style.pointerEvents = "";
