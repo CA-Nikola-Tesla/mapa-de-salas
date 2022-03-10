@@ -128,6 +128,7 @@
 		var path = el(salas[idx]);
 		if (path != null) {
 			path.style.opacity = "1";
+			path.scrollIntoView({ behavior: "smooth", block: "nearest" });
 		} else {
 			warn = document.createElement("span");
 			warn.innerHTML = "<span class='error'>Sala não mapeada<br /></span>";
