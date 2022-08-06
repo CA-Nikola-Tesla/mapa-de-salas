@@ -1,0 +1,321 @@
+{
+	"lista-turmas": [
+		"EE2",
+		"EE4",
+		"EE6"
+	],
+	"lista-dias": [
+		"segunda-feira",
+		"terça-feira",
+		"quarta-feira",
+		"quinta-feira",
+		"sexta-feira"
+	],
+	"lista-horas": [
+		"18:50 - 19:35",
+		"19:35 - 20:20",
+		"20:20 - 21:05",
+		"21:20 - 22:05",
+		"22:05 - 22:50"
+	],
+	"lista-disciplinas": [
+		{ "::": "EE2" },
+		{
+			"sigla": "CALC2",
+			"nome": "CÁLCULO DIFERENCIAL E INTEGRAL 2"
+
+		},
+		{
+			"sigla": "ALGLN",
+			"nome": "ÁLGEBRA LINEAR"
+		},
+		{
+			"sigla": "CIAMB",
+			"nome": "CIÊNCIAS AMBIENTAIS",
+			"professores": [
+				"Thayana Gimenes"
+			]
+		},
+		{
+			"sigla": "SEGEL",
+			"nome": "SEGURANÇA DO TRABALHO EM ELETRICIDADE",
+			"professores": [
+				"Luis Matos"
+			]
+		},
+		{
+			"sigla": "CIDIG",
+			"nome": "CIRCUITOS DIGITAIS",
+			"professores": [
+				"Haroldo Guibu",
+				"Hugo Magalhaes"
+			]
+		},
+		{
+			"sigla": "DISEE",
+			"nome": "DISPOSITIVOS E EQUIPAMENTOS ELETROELETRÔNICOS",
+			"professores": [
+				"Fulvio Prevot",
+				"Rafael Cuerda"
+			]
+		},
+		{
+			"sigla": "ELOA1",
+			"nome": "ELETRÔNICA 1",
+			"professores": [
+				"Haroldo Guibu",
+				"Jose Christino"
+			]
+		},
+
+		{ "::": "EE4" },
+		{
+			"sigla": "FENOT",
+			"nome": "FENÔMENOS DE TRANSPORTE",
+			"professores": [
+				"Rubem Ribeiro"
+			]
+		},
+		{
+			"sigla": "CANUA",
+			"nome": "CÁLCULO NUMÉRICO APLICADO",
+			"professores": [
+				"Fulvio Prevot"
+			]
+		},
+		{
+			"sigla": "CIEL1",
+			"nome": "CIRCUITOS ELÉTRICOS 1",
+			"professores": [
+				"Alexandre Ventieri",
+				"Rafael Cuerda"
+			]
+		},
+		{
+			"sigla": "INSTE",
+			"nome": "INSTALAÇÕES ELÉTRICAS",
+			"professores": [
+				"Jacyro Junior",
+				"Mario Cambraia"
+			]
+		},
+		{
+			"sigla": "ELPOT",
+			"nome": "ELETRÔNICA DE POTÊNCIA",
+			"professores": [
+				"Marcel Wu",
+				"Rafael Cuerda"
+			]
+		},
+		{
+			"sigla": "CONVE",
+			"nome": "CONVERSÃO DE ENERGIA",
+			"professores": [
+				"Walter Ragnev"
+			]
+		},
+		{
+			"sigla": "EMAG1",
+			"nome": "ELETROMAGNETISMO 1",
+			"professores": [
+				"Alaor Saccomano"
+			]
+		},
+
+		{ "::": "EE6" },
+		{
+			"sigla": "REMAT",
+			"nome": "RESISTÊNCIA DOS MATERIAIS"
+		},
+		{
+			"sigla": "DIRCE",
+			"nome": "DIREITO, CIDADANIA E ÉTICA",
+			"professores": [
+				"Linti Faiad"
+			]
+		},
+		{
+			"sigla": "TERMO",
+			"nome": "TERMODINÂMICA",
+			"professores": [
+				"Rubem Ribeiro"
+			]
+		},
+		{
+			"sigla": "EMPRE",
+			"nome": "EMPREENDEDORISMO",
+			"professores": [
+				"Antonio Filho"
+			]
+		},
+		{
+			"sigla": "CONS1",
+			"nome": "CONTROLE E SERVOMECANISMO 1",
+			"professores": [
+				"Caio Chinelato",
+				"Tarcisio Leao"
+			]
+		},
+		{
+			"sigla": "GEREE",
+			"nome": "GERAÇÃO DE ENERGIA ELÉTRICA",
+			"professores": [
+				"Walter Ragnev"
+			]
+		},
+		{
+			"sigla": "MATEL",
+			"nome": "MATERIAIS ELÉTRICOS",
+			"professores": [
+				"Sara Santos"
+			]
+		},
+		{
+			"sigla": "CLPRO",
+			"nome": "CONTROLADOR LÓGICO PROGRAMÁVEL",
+			"professores": [
+				"Hugo Magalhaes",
+				"Jorge Pimenidis"
+			]
+		}
+	],
+	"alias-salas": [
+
+		[ "c101", "500" ],
+		[ "c102", "501" ],
+		[ "c103", "502" ],
+		[ "c104", "503" ],
+		[ "c105", "504" ],
+		[ "c106", "505" ],
+		[ "c107", "506" ],
+		[ "c108", "507" ],
+		[ "c109", "508A" ],
+		[ "c110", "508B" ],
+		[ "c111", "509" ],
+		[ "c133", "LAB12" ],
+		[ "c134", "LAB11" ],
+		
+		[ "c201", "510" ],
+		[ "c202", "511" ],
+		[ "c203", "512" ],
+		[ "c204", "513" ],
+		[ "c205", "514" ],
+		[ "c206", "518" ],
+		[ "c207", "517" ],
+		[ "c208", "516" ],
+		[ "c209", "515" ],
+		[ "c210", "LAB9" ],
+		[ "c211", "LAB8" ],
+		[ "c212", "LAB7" ],
+		[ "c213", "LAB6" ],
+		[ "c214", "LAB16" ],
+		[ "c215", "LAB15" ],
+		[ "c216", "LAB14" ],
+		[ "c217", "LAB13" ],
+		[ "c218", "LAB1" ],
+		[ "c219", "LAB2" ],
+		[ "c220", "LAB3" ],
+		[ "c221", "LAB4" ],
+		[ "c222", "LAB5" ],
+
+		[ "d101", "620" ],
+		[ "d102", "619" ],
+		[ "d103", "618" ],
+		[ "d104", "616" ],
+		[ "d105", "614" ],
+		[ "d106", "612" ],
+		[ "d107", "613" ],
+		[ "d108", "615" ],
+		[ "d109", "617" ],
+		[ "d111", "601" ],
+		[ "d112", "602" ],
+		[ "d113", "603" ],
+		[ "d114", "604" ],
+		[ "d115", "605" ],
+		[ "d116", "606" ],
+		[ "d117", "607" ],
+		[ "d118", "608" ],
+		[ "d119", "609" ],
+		[ "d120", "611" ],
+		[ "d121", "610" ],
+
+		[ "d201", "647" ],
+		[ "d202", "D10" ],
+		[ "d203", "D9" ],
+		[ "d204", "D8" ],
+		[ "d205", "D7" ],
+		[ "d206", "646" ],
+		[ "d207", "645" ],
+		[ "d208", "644A" ],
+		[ "d209", "643" ],
+		[ "d210", "648" ],
+		[ "d211", "642" ],
+		[ "d212", "D1" ],
+		[ "d213", "641" ],
+		[ "d214", "D2" ],
+		[ "d215", "640" ],
+		[ "d216", "D3" ],
+		[ "d217", "639" ],
+		[ "d218", "638" ],
+		[ "d219", "637" ],
+		[ "d220", "630" ],
+		[ "d221", "636" ],
+		[ "d222", "D4" ],
+		[ "d223", "D5" ],
+		[ "d224", "D6" ]
+
+	],
+	"horarios": [
+		{
+			"turma": "EE2",
+			"aulas": [
+				[ "CALC2", "CALC2", "CALC2", "CIAMB", "CIAMB" ],
+				[ "CIDIG", "CIDIG", "CIDIG", "CIDIG", "CIDIG" ],
+				[ "ELOA1", "ELOA1", "ELOA1", "ELOA1", "ELOA1" ],
+				[ "SEGEL", "SEGEL", "DISEE", "DISEE", "DISEE" ],
+				[ "CALC2", "CALC2", "ALGLN", "ALGLN", "ALGLN" ]
+			],
+			"salas": [
+				[ [ "323" ], [ "323" ], [ "323" ], [ "D7" ] , [ "D7" ] ],
+				[ [ "D2" ], [ "D2" ], [ "D2" ], [ "D2" ], [ "D2" ] ],
+				[ [ "518" ], [ "518" ], [ "518" ], [ "518" ], [ "518" ] ],
+				[ [ "642" ], [ "642" ], [ "617", "642" ], [ "617", "642" ], [ "617", "642" ] ],
+				[ [ "325" ], [ "325" ], [ "325" ], [ "325" ], [ "325" ] ]
+			]
+		},
+		{
+			"turma": "EE4",
+			"aulas": [
+				[ "FENOT", "FENOT", "EMAG1", "EMAG1", "EMAG1" ],
+				[ "CIEL1", "CIEL1", "CIEL1", "CIEL1", "CIEL1" ],
+				[ "INSTE", "INSTE", "INSTE", "INSTE", "INSTE" ],
+				[ "CANUA", "CANUA", "CONVE", "CONVE", "CONVE" ],
+				[ "ELPOT", "ELPOT", "ELPOT", "ELPOT", "ELPOT" ]
+			],
+			"salas": [
+				[ [ "618" ], [ "618" ], [ "648" ], [ "648" ], [ "648" ] ],
+				[ [ "518", "D1" ], [ "518", "D1" ], [ "518", "D1" ], [ "518", "D1" ], [ "518", "D1" ] ],
+				[ [ "604", "640" ], [ "604", "640" ], [ "604", "640" ], [ "604", "640" ], [ "604", "640" ] ],
+				[ [ "D7" ], [ "D7" ], [ "D7" ], [ "D7" ], [ "D7" ] ],
+				[ [ "605", "641" ], [ "605", "641" ], [ "605", "641" ], [ "605", "641" ], [ "605", "641" ] ]
+			]
+		},
+		{
+			"turma": "EE6",
+			"aulas": [
+				[ "CONS1", "CONS1", "CONS1", "CONS1", "CONS1" ],
+				[ "TERMO", "TERMO", "GEREE", "GEREE", "GEREE" ],
+				[ "EMPRE", "EMPRE", "REMAT", "REMAT", "REMAT" ],
+				[ "CLPRO", "CLPRO", "CLPRO", "CLPRO", "CLPRO" ],
+				[ "MATEL", "MATEL", "MATEL", "DIRCE", "DIRCE" ]
+			],
+			"salas": [
+				[ [ "512", "D6" ], [ "512", "D6" ], [ "512", "D6" ], [ "512", "D6" ], [ "512", "D6" ] ],
+				[ [ "618" ], [ "618" ], [ "D7" ], [ "D7" ], [ "D7" ] ],
+				[ [ "D10" ], [ "D10" ], [ "715" ], [ "715" ], [ "715" ] ],
+				[ [ "518", "643" ], [ "518", "643" ], [ "518", "643" ], [ "518", "643" ], [ "518", "643" ] ],
+				[ [ "642" ], [ "642" ], [ "642" ], [ "D5" ], [ "D5" ] ]
+			]
+		}
+	]
+}

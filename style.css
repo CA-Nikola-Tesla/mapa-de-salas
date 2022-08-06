@@ -1,0 +1,171 @@
+body {
+	font-family: "Courier New", monospace;
+	margin: 0;
+	color: black;
+	background-color: white;
+}
+
+svg,
+div
+{
+	border: none;
+	/* outline: solid 1px blue; */
+}
+
+select {
+	
+	background-color: transparent;
+	border: solid 1px black;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: inherit;
+	line-height: inherit;
+}
+
+fieldset {
+	border-style: none;
+}
+
+@keyframes andar-3d {
+	0% {
+		transform:
+			scalex(1)
+			scaley(1)
+			rotateX(70deg)
+			rotateZ(0deg)
+			translateZ(var(--translation-y))
+	}
+	100% {
+		transform:
+			scalex(1)
+			scaley(1)
+			rotateX(70deg)
+			rotateZ(360deg)
+			translateX(0mm)
+			translateZ(var(--translation-y))
+	}
+}
+
+.map3d {
+	perspective: 200mm;
+}
+
+.andar-inicial {
+	position: relative;
+	border: solid 1px black;
+	transform-origin: 100% 100% 0 ;
+	--translation-y: 0;
+	
+	transform:
+		scaley(1)
+		scalex(1)
+		rotateX(70deg)
+		rotateZ(-50deg)
+		translateZ(var(--translation-y))
+		;
+	
+	opacity: 40%;
+	fill: #cccccc;
+	mix-blend-mode: normal;
+	filter: 
+		drop-shadow( -2mm 2mm 1mm rgba(0, 0, 0, 0.5))
+		drop-shadow( 0mm 0mm 0.5mm rgba(0, 0, 0, 1))
+		;
+}
+
+.andar-normal {
+	stroke-width: 2mm;
+}
+
+.andar-destacado {
+	fill: #fefecc;
+	opacity: 70%;
+	stroke-width: 5mm;
+}
+
+.bloco-inicial {
+	opacity: 0%;
+}
+
+.bloco-normal {
+	opacity: 100%;
+	transition: all 0.5s ease;
+}
+
+.bloco-normal g * {
+	display: none;
+}
+
+.bloco-zoom {
+	opacity: 100%;
+}
+
+.bloco-zoom g * {
+	display: inline;
+}
+
+.bloco-destacado {
+	opacity: 100%;
+}
+
+.bloco-destacado g text {
+	display: none;
+}
+
+.bloco-destacado g path.sala-destacado {
+	fill: red !important;
+}
+
+.bloco-destacado rect,
+.bloco-destacado path {
+	fill: lime !important;
+}
+
+.sala-normal {
+	display: inline !important;
+}
+
+.sala-destacado {
+	display: inline !important;
+	fill: lime !important;
+}
+
+svg text {
+	text-anchor: middle;
+	dominant-baseline: middle;
+	stroke-width: 0.1mm;
+	stroke: rgb(254, 254, 204);
+	paint-order: stroke;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+}
+
+.highlighted {
+	opacity: 100%;
+}
+
+div {
+	margin-left: auto;
+	margin-right: auto;
+	width: 150mm;
+	text-align: center;
+}
+
+div#errordiv,
+div#loadingdiv
+{
+	font-weight: bold;
+}
+
+div#errordiv {
+	color: red;
+}
+
+div#infodiv {
+	font-weight: bold;
+}
+
+div.footer {
+	padding-top: 2mm;
+	padding-bottom: 2mm;
+}

@@ -1,282 +1,58 @@
-<!doctype html>
-<html lang="pt-BR">
+<html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Mapa de salas</title>
-		<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
-		body {
-			font-family: monospace;
-			line-height: 2;
-		}
-
-		span.error {
-			color: red;
-			font-weight: bold;
-		}
-		div.footer {
-			color: gray;
-		}
-		</style>
+		<meta name="viewport" content="user-scalable=yes, width=device-width">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div id="divload" style="text-align: center">Carregando...</div>
-		<div id="divcontent" style="text-align: center; display: none">
-			<div id="divsel">
-				Turma: <select id="selturma"></select><br />
-				Dia: <select id="seldia"></select>
-				Aula: <select id="selhorario"></select>
-				<div id="divselsala" style="display: none">
-					Sala: <select id="selsala">
-						<option value="0">0</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-					</select>
-				</div>
-				<div id="divlabelsala" style="display: none">
-				</div>
-			</div>
-			<div id="divsalanome"></div>
-			<div id="divdesc"></div>
-			<div id="divmap" style="min-height: 500px"></div>
-			<div class="footer"><br /><br />Copyright &copy; 2022 <b>Centro Acadêmico Nikola Tesla</b> - Engenharia Elétrica - IFSP - Câmpus São Paulo</div>
+		<div id="selectdiv" style="display: none">
+			<fieldset id="selectset" disabled="disabled">
+				<select id="selturma"></select>
+				<select id="seldia"></select>
+				<select id="selhora"></select>
+				<select id="selsala"></select>
+			</fieldset>
 		</div>
+		<div id="loadingdiv"><br />Carregando...<br /></div>
+		<div id="errordiv" style="display: none">Dados indisponíveis</div>
+		<div id="infodiv" style="display: none">
+			<span id="materiaspan">NOME DA MATERIA</span><br />
+			<span id="professorspan">Nome do Professor</span><br />
+			<span id="salaspan">SALA</span><br />
+		</div>
+		<div id="nomapdiv" style="display: none">
+			<br />
+			Mapa indisponível
+			<br />
+		</div>
+		<div id="contentdiv" style="opacity: 0%">
+			<div class="titulo">
+				<br />
+				<span id="nome-area">&nbsp;</span>
+			</div>
+			<div id="zoomdiv">
+				<svg id="zoom-bloco" width="150mm" height="150mm" viewBox="0 0 150mm 150mm"
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:svg="http://www.w3.org/2000/svg">
+				</svg>
+			</div>
+			<div id="mapdiv"></div>
+		</div>
+		<div class="footer">
+			<br />
+			Copyright &copy; 2022 <b>Centro Acadêmico Nikola Tesla</b>
+			<br />
+			Engenharia Elétrica - IFSP - Câmpus São Paulo
+		</div>
+		<script src="script.js"></script>
+		<script>
 
-<script>
-	var tbl_aulas = [];
-	var last_map = "";
-
-	function el(name) {
-		return document.getElementById(name);
-	}
-
-	function setattr(name, attr, val) {
-		el(name).setAttribute(attr, val);
-	}
-
-	function get_matching_col(turma, dia, horario) {
-		return tbl_aulas.find(element => element.startsWith(turma + ";" + dia + ";" + horario + ";"));
-	}
-	
-	function get_matching_col_index(turma, dia, horario, i) {
-		var ret = get_matching_col(turma, dia, horario);
-		if (typeof ret == "undefined")
-			return null;
-		else
-			return ret.split(";")[i].trim();
-	}
-
-	function get_unique_col(col) {
-		var arr = [];
-		for (i = 0; i < tbl_aulas.length; i++)
-			arr.push(tbl_aulas[i].split(";")[col]);
-
-		return arr.filter((v, i, a) => a.indexOf(v) === i);
-	}
-
-	function get_hora(turma, dia, horario) {
-		return get_matching_col_index(turma, dia, horario, 3);
-	}
-
-	function get_sala(turma, dia, horario) {
-		return get_matching_col_index(turma, dia, horario, 4);
-	}
-
-	function get_mapa(turma, dia, horario) {
-		return get_matching_col_index(turma, dia, horario, 5);
-	}
-	
-	function get_disc(turma, dia, horario) {
-		return get_matching_col_index(turma, dia, horario, 6);
-	}
-
-	function get_prof(turma, dia, horario) {
-		return get_matching_col_index(turma, dia, horario, 7);
-	}
-
-	function get_sala_nome(turma, dia, horario) {
-		return get_matching_col_index(turma, dia, horario, 8);
-	}
-
-	function fill_sel(sel, col) {
-		el(sel).innerHTML = "";
-		var vals = get_unique_col(col);
-		for (i = 0; i < vals.length; i++) {
-			var opt = document.createElement("option");
-			opt.value = vals[i];
-			opt.innerHTML = vals[i].toUpperCase();
-			el(sel).appendChild(opt);
-		}
-	}
-	
-	function fill_sells() {
-		fill_sel("selturma", 0);
-		fill_sel("seldia", 1);
-		fill_sel("selhorario", 2);
-	}
-
-	function hl_sala(idx, salas) {
-		var svgs = el("divmap").getElementsByTagName("svg");
-		var paths = [];
-		if (svgs.length === 1)
-			paths = svgs[0].getElementsByTagName("path");
-
-		for (i = 0; i < paths.length; i++)
-			paths[i].style.opacity = "0";
-
-		var path = el(salas[idx]);
-		if (path != null) {
-			path.style.opacity = "1";
-			path.scrollIntoView({ behavior: "smooth", block: "nearest" });
-		} else if (paths.length > 0) {
-			warn = document.createElement("span");
-			warn.innerHTML = "<span class='error'>Sala não mapeada<br /></span>";
-			el("divdesc").appendChild(warn);
-		}
-
-		el("divselsala").style.display = salas.length == 1 ? "none" : "";
-		el("divlabelsala").innerHTML = "Sala " + salas[0].toUpperCase();
-		el("divlabelsala").style.display = salas.length == 1 ? "" : "none";
-	}
-
-	function load_map(turma, dia, horario, idx) {
-		el("divsel").style.pointerEvents = "none";
-		el("divsel").style.opacity = "0.4";
-		el("divdesc").innerHTML = "";
-		
-		var mapa = get_mapa(turma, dia, horario);
-		if (mapa == null) {
-			last_map = "";
-			el("divmap").innerHTML = "";
-			el("divdesc").innerHTML = "<br /><br />Sem aula neste horário.<br />Você ganhou um descanso :)"
-			el("divselsala").style.display = "none";
-			el("divlabelsala").innerHTML = "";
-			el("divsel").style.pointerEvents = "";
-			el("divsel").style.opacity = "1";
-			el("divsalanome").innerHTML = "";
-		} else {
-			salas = get_sala(turma, dia, horario).split(",");
-			salas_nomes = get_sala_nome(turma, dia, horario).split(",");
-			hora = get_hora(turma, dia, horario);
-			disc = get_disc(turma, dia, horario);
-			profs = get_prof(turma, dia, horario).split(",");
-			mapas = mapa.split(",");
-
-			if (idx == null || isNaN(idx) || idx == "")
-				idx = 0;
-
-			while (idx >= salas.length)
-				idx--;
-
-			el("divdesc").innerHTML = "<p><b>" + hora + "<br />" + disc + "</b><br />" + profs[idx] + "</p>";
-			el("divsalanome").innerHTML = salas_nomes[idx];
-
-			el("selsala").innerHTML = "";
-			for (i = 0; i < salas.length; i++) {
-				var opt = document.createElement("option");
-				opt.value = i
-				opt.innerHTML = salas[i].toUpperCase();
-				el("selsala").appendChild(opt);
+			window.onerror = function(msg, url, linenumber) {
+				alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+				return true;
 			}
-			el("selsala").value = idx;
 
-			console.log("last map: " + last_map);
-			console.log("new map : " + mapas[idx].trim());
-
-			if (mapas[idx].trim() != last_map) {
-				console.log("new map request...");
-				el("divmap").innerHTML = "Carregando mapa...";
-				xhr = new XMLHttpRequest();
-				xhr.open("GET", "mapas/" + mapas[idx].trim() + ".svg", true);
-				xhr.overrideMimeType("image/svg+xml");
-				xhr.salas = salas;
-				xhr.salas_nomes = salas_nomes;
-				xhr.disc = disc;
-				xhr.profs = profs;
-				xhr.mapa = mapas[idx].trim();
-				xhr.idx = idx;
-
-				xhr.onload = function(e) {
-					if (xhr.readyState === 4) {
-						console.log("request finished");
-						if (xhr.status === 200) {
-							console.log("new map loaded");
-							el("divmap").innerHTML = "";
-							el("divmap").appendChild(xhr.responseXML.documentElement);
-							el("divmap").getElementsByTagName("svg")[0].style.width = "100%";
-							el("divmap").getElementsByTagName("svg")[0].style.maxWidth = "500px";
-							el("divmap").getElementsByTagName("svg")[0].removeAttribute("height");
-							hl_sala(this.idx, this.salas);
-							last_map = xhr.mapa;
-						} else {
-							console.log("map not found");
-							el("divmap").innerHTML = "<br /><br /><span class='error'>Mapa indisponível</span>";
-							hl_sala(this.idx, this.salas);
-							last_map = "";
-						}
-						el("divsel").style.pointerEvents = "";
-						el("divsel").style.opacity = "1";
-					}
-				};
-				xhr.send(null);
-			} else {
-				hl_sala(idx, salas);
-				el("divsel").style.pointerEvents = "";
-				el("divsel").style.opacity = "1";
-			}
-		}
-	}
-
-	function update_map() {
-		load_map(el("selturma").value, el("seldia").value, el("selhorario").value, el("selsala").value);
-		window.location.hash = el("selturma").value + "," + el("seldia").value + "," + el("selhorario").value + "," + el("selsala").value;
-	}
-
-	function init_sys() {
-		xhr = new XMLHttpRequest();
-		xhr.open("GET", "tabelas/aulas-e-horarios.txt", true);
-		xhr.overrideMimeType("text/plain");
-		tbl_aulas = [];
-		xhr.onload = function(e) {
-			if (xhr.readyState === 4 && xhr.status === 200) {
-				var arr = xhr.responseText.split("\n");
-				for (i = 0; i < arr.length; i++) {
-					var s = "";
-					if (!arr[i].match(/^\s*#/) && !arr[i].match(/^\s*$/)) {
-						var line = arr[i].split(";");
-						for (j = 0; j < line.length; j++)
-							s = s + line[j].trim() + ";"
-
-						tbl_aulas.push(s);
-					}
-				}
-				fill_sells();
-				el("divload").style.display = "none";
-				el("divcontent").style.display = "";
-				var hashes = window.location.hash.split(",");
-				if (hashes.length == 4) {
-					el("selturma").value = hashes[0].substring(1);
-					el("seldia").value = decodeURI(hashes[1]);
-					el("selhorario").value = hashes[2];
-					el("selsala").value = hashes[3];
-				}
-				update_map();
-				el("selturma").addEventListener("change", update_map);
-				el("seldia").addEventListener("change", update_map);
-				el("selhorario").addEventListener("change", update_map);
-				el("selsala").addEventListener("change", update_map);
-			}
-		}
-		xhr.send(null);
-	}
-
-	init_sys();
-
-</script>
+			init_system();
+		</script>
 	</body>
 </html>
