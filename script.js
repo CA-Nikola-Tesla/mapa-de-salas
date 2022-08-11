@@ -517,7 +517,10 @@ function load_cookie_turma() {
 }
 
 function seldia_hoje() {
-	var idx = new Date().getDay() - 1;
+	var now = new Date();
+	var idx = now.getDay() - 1;
+	if ((now.getHours() == 22 && now.getMinutes() > 50) || now.getHours() > 22)
+		idx++;
 	if (idx >= 0 && idx <= 4) {
 		el("seldia").selectedIndex = idx;
 	}
@@ -546,5 +549,7 @@ function selhora_agora() {
 			}
 		}
 	}
+	if (sel_idx < 0)
+		sel_idx = htbl.length - 1;
 	el("selhora").selectedIndex = sel_idx;
 }
