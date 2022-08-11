@@ -166,6 +166,11 @@ div#infodiv {
 }
 
 div.footer {
+	font-size: 1em;
 	padding-top: 2mm;
 	padding-bottom: 2mm;
+}
+
+a {
+	text-decoration: none;
 }
