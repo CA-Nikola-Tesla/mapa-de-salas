@@ -539,8 +539,8 @@ function selhora_agora() {
 		var t2 = t[1].trim();
 		htbl.push([ new Date(prefix + t1), new Date(prefix + t2) ]);
 	}
-	if (now >= htbl[htbl.length - 1]) {
-		sel_idx = table["lista-horas"].length - 1;
+	if (now >= htbl[htbl.length - 1][1]) {
+		sel_idx = 0;
 	} else {
 		for(var i = 0; i < htbl.length; i++) {
 			if (now < htbl[i][1]) {
