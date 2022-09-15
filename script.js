@@ -272,6 +272,7 @@ function load_map() {
 
 function init_system() {
 	load_map();
+	load_version();
 }
 
 function reset_map() {
@@ -552,4 +553,17 @@ function selhora_agora() {
 	if (sel_idx < 0)
 		sel_idx = htbl.length - 1;
 	el("selhora").selectedIndex = sel_idx;
+}
+
+function load_version() {
+	fetch("https://api.github.com/repos/CA-Nikola-Tesla/mapa-de-salas/commits?per_page=1")
+	.then(res => res.json())
+	.then(res =>
+		{
+			var date = new Date(res[0].commit.author.date);
+			el("spanversion").innerHTML = "Última atualização: " +
+				"<a target=_blank href='https://github.com/CA-Nikola-Tesla/mapa-de-salas/commit/" + res[0].sha + "'>" +
+				date.toLocaleString("pt-BR") + "</a>";
+		}
+	);
 }
