@@ -1,8 +1,8 @@
 {
 	"lista-turmas": [
-		"EE2",
-		"EE4",
-		"EE6"
+		"EE3",
+		"EE5",
+		"EE7"
 	],
 	"lista-dias": [
 		"segunda-feira",
@@ -68,6 +68,67 @@
 			]
 		},
 
+		{ "::": "EE3" },
+		{
+			"sigla": "FISEL",
+			"nome": "FÍSICA TEÓRICA 2 - ELÉTRICA",
+			"professores": [
+				"Tatiane Sales"
+			]
+		},
+		{
+			"sigla": "QUITE",
+			"nome": "QUÍMICA TEÓRICA E EXPERIMENTAL",
+			"professores": [
+				"Caio Souza",
+				"Gabriela Santiago"
+			]
+		},
+		{
+			"sigla": "LIPRO",
+			"nome": "LINGUAGEM DE PROGRAMAÇÃO",
+			"professores": [
+				"Elaine Bueno",
+				"Priscila Caliope"
+			]
+		},
+		{
+			"sigla": "ELOA2",
+			"nome": "ELETRÔNICA 2",
+			"professores": [
+				"Haroldo Guibu",
+				"Jose Christino"
+			]
+		},
+		{
+			"sigla": "CAPLE",
+			"nome": "CÁLCULO APLICADO À ELÉTRICA",
+			"professores": [
+				"Fulvio Prevot"
+			]
+		},
+		{
+			"sigla": "ESTAP",
+			"nome": "ESTATÍSTICA APLICADA À PROBABILIDADE",
+			"professores": [
+				"Fulvio Prevot"
+			]
+		},
+		{
+			"sigla": "CIEMA",
+			"nome": "CIÊNCIA DOS MATERIAIS",
+			"professores": [
+				"Sara Santos"
+			]
+		},
+		{
+			"sigla": "MECAB",
+			"nome": "MECÂNICA APLICADA BÁSICA",
+			"professores": [
+				"Garabed Kenchian"
+			]
+		},
+
 		{ "::": "EE4" },
 		{
 			"sigla": "FENOT",
@@ -119,6 +180,61 @@
 			"nome": "ELETROMAGNETISMO 1",
 			"professores": [
 				"Alaor Saccomano"
+			]
+		},
+
+		{ "::": "EE5" },
+		{
+			"sigla": "LUMIN",
+			"nome": "LUMINOTÉCNICA",
+			"professores": [
+				"Mario Cambraia"
+			]
+		},
+		{
+			"sigla": "EMAG2",
+			"nome": "ELETROMAGNETISMO 2",
+			"professores": [
+				"Alaor Saccomano"
+			]
+		},
+		{
+			"sigla": "CIEL2",
+			"nome": "CIRCUITOS ELÉTRICOS 2",
+			"professores": [
+				"Alexandre Ventieri",
+				"Rafael Cuerda"
+			]
+		},
+		{
+			"sigla": "INSTI",
+			"nome": "INSTALAÇÕES ELÉTRICAS INDUSTRIAIS",
+			"professores": [
+				"Jacyro Junior",
+				"Mario Cambraia"
+			]
+		},
+		{
+			"sigla": "ADMIN",
+			"nome": "TEORIA GERAL DA ADMINISTRAÇÃO",
+			"professores": [
+				"Antonio Filho"
+			]
+		},
+		{
+			"sigla": "MAQEL",
+			"nome": "MÁQUINAS ELÉTRICAS",
+			"professores": [
+				"João Silva",
+				"Marcel Wu"
+			]
+		},
+		{
+			"sigla": "COMAE",
+			"nome": "COMANDO E ACIONAMENTO ELÉTRICOS",
+			"professores": [
+				"Helio Kiessling",
+				"Marcos Kurata"
 			]
 		},
 
@@ -177,7 +293,71 @@
 				"Hugo Magalhaes",
 				"Jorge Pimenidis"
 			]
-		}
+		},
+
+		{ "::": "EE7" },
+		{
+			"sigla": "TRAEE",
+			"nome": "TRANSMISSÃO DE ENERGIA ELÉTRICA",
+			"professores": [
+				"Marcel Wu",
+				"Walter Ragnev"
+			]
+		},
+		{
+			"sigla": "TELEC",
+			"nome": "TELECOMUNICAÇÕES",
+			"professores": [
+				"João Mendes"
+			]
+		},
+		{
+			"sigla": "SISMM",
+			"nome": "SISTEMAS MICROPROCESSADOS E MICROCONTROLADOS",
+			"professores": [
+				"Hugo Magalhães"
+			]
+		},
+		{
+			"sigla": "TRAEL",
+			"nome": "TRAÇÃO ELÉTRICA",
+			"professores": [
+				"Carlos Tanaka"
+			]
+		},
+		{
+			"sigla": "SUBEE",
+			"nome": "SUBESTAÇÕES DE ENERGIA ELÉTRICA",
+			"professores": [
+				"Luis Matos"
+			]
+		},
+		{
+			"sigla": "REDIS",
+			"nome": "REDES INDUSTRIAIS E SUPERVISÓRIOS",
+			"professores": [
+				"Gilberto Igarash",
+				"Waldemar Panades"
+			]
+		},
+		{
+			"sigla": "COMGE",
+			"nome": "COMERCIALIZAÇÃO E GESTÃ DE ENERGIA ELÉTRICA",
+			"professores": [
+				"Luiz Rosa"
+			]
+		},
+		{
+			"sigla": "CONS2",
+			"nome": "CONTROLE E SERVOMECANISMO 2",
+			"professores": [
+				"Caio Chinelato",
+				"Jose Neto"
+			]
+		},
+
+		{ "::": "FIM" }
+
 	],
 	"alias-salas": [
 
