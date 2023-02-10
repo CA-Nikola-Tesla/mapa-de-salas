@@ -373,6 +373,10 @@ function get_disc_info(turma_idx, dia_idx, hora_idx) {
 	var disc_sigla = horario["aulas"][dia_idx][hora_idx];
 	var disc_idx = table["lista-disciplinas"].findIndex(t => t["sigla"] === disc_sigla);
 	var disc_info = structuredClone(table["lista-disciplinas"][disc_idx]);
+	if (table["horarios"][turma_idx]["salas"].length <= dia_idx)
+		return null;
+	if (table["horarios"][turma_idx]["salas"][dia_idx].length <= hora_idx)
+		return null;
 	var salas = table["horarios"][turma_idx]["salas"][dia_idx][hora_idx].slice();
 	for (var i = 0; i < salas.length; i++) {
 		for (var j = 0; j < salas[i].length; j++) {
