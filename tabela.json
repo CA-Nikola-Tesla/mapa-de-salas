@@ -1,5 +1,6 @@
 {
 	"lista-turmas": [
+		"EE1",
 		"EE3",
 		"EE5",
 		"EE7"
@@ -19,6 +20,69 @@
 		"22:05 - 22:50"
 	],
 	"lista-disciplinas": [
+		{
+			"sigla": "N/D",
+			"nome": "N/D",
+			"professores": [
+				"N/D"
+			]
+		},
+
+		{ "::": "EE1" },
+		{
+			"sigla": "SPOFIT1",
+			"nome": "FÍSICA TEÓRICA E EXPERIMENTAL",
+			"professores": [
+				"Gustavo Killner",
+				"Marcio Corrallo"
+			]
+		},
+		{
+			"sigla": "SPOCAL1",
+			"nome": "CÁLCULO DIFERENCIAL E INTEGRAL 1",
+			"professores": [
+				"Tiago Menezes"
+			]
+		},
+		{
+			"sigla": "SPODETC",
+			"nome": "DESENHO TÉCNICO AUXILIADO POR COMPTADOR",
+			"professores": [
+				"Daniel Santos",
+				"Marcos Guimaraes"
+			]
+		},
+		{
+			"sigla": "SPOCOMX",
+			"nome": "COMUNICAÇÃO E EXPRESSÃO",
+			"professores": [
+				"Kelly Lima"
+			]
+		},
+		{
+			"sigla": "SPOINEE",
+			"nome": "INTRODUÇÃO À ENGENHARIA ELÉTRICA",
+			"professores": [
+				"Jacyro Junior",
+				"Tarcisio Leao"
+			]
+		},
+		{
+			"sigla": "SPOELET",
+			"nome": "ELETRICIDADE",
+			"professores": [
+				"Shiga Alberto",
+				"Alexandre Ventieri"
+			]
+		},
+		{
+			"sigla": "SPOGAVE",
+			"nome": "EOMETRIA ANALÍTICA E VETORIAL",
+			"professores": [
+				"Tiago Menezes"
+			]
+		},
+
 		{ "::": "EE2" },
 		{
 			"sigla": "CALC2",
@@ -447,54 +511,72 @@
 	],
 	"horarios": [
 		{
-			"turma": "EE2",
+			"turma": "EE1",
 			"aulas": [
-				[ "CALC2", "CALC2", "CALC2", "CIAMB", "CIAMB" ],
-				[ "CIDIG", "CIDIG", "CIDIG", "CIDIG", "CIDIG" ],
-				[ "ELOA1", "ELOA1", "ELOA1", "ELOA1", "ELOA1" ],
-				[ "SEGEL", "SEGEL", "DISEE", "DISEE", "DISEE" ],
-				[ "CALC2", "CALC2", "ALGLN", "ALGLN", "ALGLN" ]
+				[ "SPOELET", "SPOELET", "SPOELET", "SPOELET", "SPOELET" ],
+				[ "SPOFIT1", "SPOFIT1", "SPOFIT1", "SPOFIT1", "SPOFIT1" ],
+				[ "SPOCAL1", "SPOCAL1", "SPOCAL1", "SPOINEE", "SPOINEE" ],
+				[ "SPODETC", "SPODETC", "SPODETC", "SPOCAL1", "SPOCAL1" ],
+				[ "SPOGAVE", "SPOGAVE", "SPOGAVE", "SPOCOMX", "SPOCOMX" ]
 			],
 			"salas": [
-				[ [ "323" ], [ "323" ], [ "323" ], [ "D7" ] , [ "D7" ] ],
-				[ [ "D2" ], [ "D2" ], [ "D2" ], [ "D2" ], [ "D2" ] ],
-				[ [ "518" ], [ "518" ], [ "518" ], [ "518" ], [ "518" ] ],
-				[ [ "642" ], [ "642" ], [ "617", "642" ], [ "617", "642" ], [ "617", "642" ] ],
-				[ [ "325" ], [ "325" ], [ "325" ], [ "325" ], [ "325" ] ]
+				[ [ "c206", "d216" ], [ "c206", "d216" ], [ "c206", "d216" ], [ "c206", "d216" ], [ "c206", "d216" ] ],
+				[ [ "a333", "a356" ], [ "a333", "a356" ], [ "a321" ], [ "a321" ], [ "a321" ] ],
+				[ [ "a321" ], [ "a321" ] ,[ "a321" ] ,[ "d224" ] ,[ "d224" ] ],
+				[ [ "c202", "c203", "f805" ], [ "c202", "c203", "f805" ], [ "c202", "c203", "f805" ], [ "c202" ], [ "c202" ] ],
+				[ [ "a321" ], [ "a321" ], [ "a321" ], [ "a321" ], [ "a321" ] ]
 			]
 		},
 		{
-			"turma": "EE4",
+			"turma": "EE3",
 			"aulas": [
-				[ "FENOT", "FENOT", "EMAG1", "EMAG1", "EMAG1" ],
-				[ "CIEL1", "CIEL1", "CIEL1", "CIEL1", "CIEL1" ],
-				[ "INSTE", "INSTE", "INSTE", "INSTE", "INSTE" ],
-				[ "CANUA", "CANUA", "CONVE", "CONVE", "CONVE" ],
-				[ "ELPOT", "ELPOT", "ELPOT", "ELPOT", "ELPOT" ]
+				[ "FISEL", "FISEL", "QUITE", "QUITE", "QUITE" ],
+				[ "LIPRO", "LIPRO", "LIPRO", "LIPRO", "LIPRO" ],
+				[ "ELOA2", "ELOA2", "ELOA2", "ELOA2", "ELOA2" ],
+				[ "CAPLE", "CAPLE", "CAPLE", "ESTAP", "ESTAP" ],
+				[ "CIEMA", "CIEMA", "MECAB", "MECAB", "MECAB" ]
 			],
 			"salas": [
-				[ [ "603" ], [ "603" ], [ "648" ], [ "648" ], [ "648" ] ],
-				[ [ "518", "D1" ], [ "518", "D1" ], [ "518", "D1" ], [ "518", "D1" ], [ "518", "D1" ] ],
-				[ [ "604", "640" ], [ "604", "640" ], [ "604", "640" ], [ "604", "640" ], [ "604", "640" ] ],
-				[ [ "D7" ], [ "D7" ], [ "D7" ], [ "D7" ], [ "D7" ] ],
-				[ [ "605", "641" ], [ "605", "641" ], [ "605", "641" ], [ "605", "641" ], [ "605", "641" ] ]
+				[ [ "a321" ], [ "a321" ], [ "a321" ], [ "a321" ], [ "a321" ] ],
+				[ [ "c208" ], [ "c208" ], [ "c208" ], [ "c208" ], [ "c208" ] ],
+				[ [ "c206", "d206" ], [ "c206", "d206" ], [ "c206", "d206" ], [ "c206", "d206" ], [ "c206", "d206" ] ],
+				[ [ "c206" ], [ "c206" ], [ "c206" ], [ "c206" ], [ "c206" ] ],
+				[ [ "c209" ], [ "c209" ], [ "f805" ], [ "f805" ], [ "f805" ] ]
 			]
 		},
 		{
-			"turma": "EE6",
+			"turma": "EE5",
 			"aulas": [
-				[ "CONS1", "CONS1", "CONS1", "CONS1", "CONS1" ],
-				[ "TERMO", "TERMO", "GEREE", "GEREE", "GEREE" ],
-				[ "EMPRE", "EMPRE", "REMAT", "REMAT", "REMAT" ],
-				[ "CLPRO", "CLPRO", "CLPRO", "CLPRO", "CLPRO" ],
-				[ "MATEL", "MATEL", "MATEL", "DIRCE", "DIRCE" ]
+				[ "LUMIN", "LUMIN", "EMAG2", "EMAG2", "EMAG2" ],
+				[ "CIEL2", "CIEL2", "CIEL2", "CIEL2", "CIEL2" ],
+				[ "INSTI", "INSTI", "INSTI", "ADMIN", "ADMIN" ],
+				[ "MAQEL", "MAQEL", "MAQEL", "MAQEL", "MAQEL" ],
+				[ "COMAE", "COMAE", "COMAE", "COMAE", "COMAE" ]
+
 			],
 			"salas": [
-				[ [ "512", "D6" ], [ "512", "D6" ], [ "512", "D6" ], [ "512", "D6" ], [ "512", "D6" ] ],
-				[ [ "648" ], [ "648" ], [ "D7" ], [ "D7" ], [ "D7" ] ],
-				[ [ "D10" ], [ "D10" ], [ "715" ], [ "715" ], [ "715" ] ],
-				[ [ "501", "502", "643" ], [ "501", "502", "643" ], [ "501", "502", "643" ], [ "501", "502", "643" ], [ "501", "502", "643" ] ],
-				[ [ "642" ], [ "642" ], [ "642" ], [ "D5" ], [ "D5" ] ]
+				[ [ "d215" ], [ "d215" ], [ "d215" ], [ "d215" ], [ "d215" ] ],
+				[ [ "c206", "d212" ], [ "c206", "d212" ], [ "c206", "d212" ], [ "c206", "d212" ], [ "c206", "d212" ] ],
+				[ [ "d114", "d211" ], [ "d114", "d211" ], [ "d114", "d211" ], [ "d222" ], [ "d222" ] ],
+				[ [ "d117", "d215" ], [ "d117", "d215" ], [ "d117", "d215" ], [ "d117", "d215" ], [ "d117", "d215" ] ],
+				[ [ "d223", "d226" ], [ "d223", "d226" ], [ "d223", "d226" ], [ "d223", "d226" ], [ "d223", "d226" ] ]
+			]
+		},
+		{
+			"turma": "EE7",
+			"aulas": [
+				[ "TRAEE", "TRAEE", "TRAEE", "TRAEE", "TRAEE" ],
+				[ "TELEC", "TELEC", "SISMM", "SISMM", "SISMM" ],
+				[ "TRAEL", "TRAEL", "SUBEE", "SUBEE", "SUBEE" ],
+				[ "REDIS", "REDIS", "REDIS", "COMGE", "COMGE" ],
+				[ "CONS2", "CONS2", "CONS2" ]
+			],
+			"salas": [
+				[ [ "c203", "d222" ], [ "c203", "d222" ], [ "c203", "d222" ], [ "c203", "d222" ], [ "c203", "d222" ] ],
+				[ [ "d203" ], [ "d203" ], [ "c207" ], [ "c207" ], [ "c207" ] ],
+				[ [ "d213" ], [ "d213" ], [ "d213" ], [ "d213" ], [ "d213" ] ],
+				[ [ "c208" ], [ "c208" ], [ "c208" ], [ "d213" ], [ "d213" ] ],
+				[ [ "c207", "d224" ], [ "c207", "d224" ], [ "c207", "d224" ] ]
 			]
 		}
 	]
