@@ -49,7 +49,7 @@
   <g
      id="layer5"
      inkscape:label="andar-1,térreo"
-     style="display:none;opacity:0.5"
+     style="display:inline;opacity:0.5"
      inkscape:groupmode="layer">
     <path
        id="path1121"
@@ -769,37 +769,32 @@
         <path
            id="rect1574-1"
            style="display:inline;opacity:1;vector-effect:none;fill:#96f2a9;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;paint-order:markers fill stroke;stop-color:#000000"
-           inkscape:label="f802"
+           inkscape:label="f811"
            d="m 121.00037,14.000179 -5.2e-4,8.999967 h 8.00003 v -0.999938 a 1,1 0 0 1 0.99994,0.999938 c 3e-5,-0.552236 0.4477,-0.999905 0.99994,-0.999938 v 0.999938 h 1.00045 v -8.999967 z" />
         <path
            id="rect1574-1-2"
            style="display:inline;opacity:1;vector-effect:none;fill:#96f2a9;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;paint-order:markers fill stroke;stop-color:#000000"
-           inkscape:label="fxxx"
+           inkscape:label="f812"
            d="m 132,14 v 9 h 6 c 3e-5,-0.552237 0.4477,-0.999906 0.99994,-0.999939 V 23 h 1.00046 L 140,14 Z"
            sodipodi:nodetypes="cccccccc" />
         <path
            id="rect1574-1-2-7"
            style="display:inline;vector-effect:none;fill:#96f2a9;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;paint-order:markers fill stroke;stop-color:#000000"
-           inkscape:label="fxxx"
+           inkscape:label="f815"
            d="M 106,42 V 25 h 9 c 3e-5,0.552237 0.4477,0.999906 0.99994,0.999939 V 25 h 1.00046 L 117,42 Z"
            sodipodi:nodetypes="cccccccc" />
         <path
-           id="rect1574-1-2-7-2"
-           style="display:inline;opacity:1;vector-effect:none;fill:#96f2a9;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;paint-order:markers fill stroke;stop-color:#000000"
-           inkscape:label="fxxx"
-           d="M 152.0004,42 152,27 h 4.9996 c 3e-5,0.552237 0.4477,0.999906 0.99994,0.999939 V 27 H 159 v 14 h 2 v 5 h -8 v -4 z"
-           sodipodi:nodetypes="cccccccccccc" />
-        <path
            id="rect1574-1-2-9"
            style="display:inline;vector-effect:none;fill:#96f2a9;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;paint-order:markers fill stroke;stop-color:#000000"
-           inkscape:label="fxxx"
+           inkscape:label="f813"
            d="m 140,14 v 9 h 1 c 3e-5,-0.552237 0.4477,-0.999906 0.99994,-0.999939 V 23 h 9.00046 L 151,14 Z"
            sodipodi:nodetypes="cccccccc" />
         <path
            id="rect1574-1-2-9-8"
            style="display:inline;opacity:1;vector-effect:none;fill:#96f2a9;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;paint-order:markers fill stroke;stop-color:#000000"
-           inkscape:label="f803"
-           d="m 175,14 -3.99994,6e-5 -6e-5,5 c 0.55224,3e-5 0.99991,0.4477 0.99994,0.99994 H 171 v 1 l 3.99994,-4.6e-4 z m -13.00059,1.79e-4 v 7.00009 c -0.552,3.12e-4 -0.99939,0.447875 -0.99942,0.999939 h 0.99942 v 0.999938 h 1.00046 v -0.999938 c 0.55224,3.3e-5 0.99991,0.447704 0.99994,0.999938 3e-5,-0.552235 0.4477,-0.999905 0.99994,-0.999938 v 0.999938 h 4.00027 v -2.000394 h 1.99988 v -0.999939 h 0.99994 c -3e-5,-0.552237 -0.4477,-0.999906 -0.99994,-0.999939 v -4.999695 z m -10.99984,0 v 8.999967 h 1.00045 v -0.999938 c 0.55224,3.3e-5 0.99991,0.447703 0.99994,0.999938 a 1,1 0 0 1 0.99994,-0.999938 v 0.999938 h 8.00003 v -1.000455 h -0.99994 a 1,1 0 0 1 0.99994,-0.999939 l -5.2e-4,-6.999573 z" />
+           inkscape:label="f814"
+           d="m 175,14 -3.99994,6e-5 -6e-5,5 c 0.55224,3e-5 0.99991,0.4477 0.99994,0.99994 H 171 v 1 l 3.99994,-4.6e-4 z m -13.00059,1.79e-4 v 7.00009 c -0.552,3.12e-4 -0.99939,0.447875 -0.99942,0.999939 h 0.99942 v 0.999938 h 7.00061 v -2.000394 h 1.99988 v -0.999939 h 0.99994 c -3e-5,-0.552237 -0.4477,-0.999906 -0.99994,-0.999939 v -4.999695 z m -10.99984,0 v 8.999967 h 1.00045 v -0.999938 c 0.55224,3.3e-5 0.99991,0.447703 0.99994,0.999938 3e-5,-0.552237 0.4477,-0.999905 0.99994,-0.999938 v 0.999938 h 8.00003 v -1.000455 h -0.99994 c 3e-5,-0.552237 0.4477,-0.999906 0.99994,-0.999939 l -5.2e-4,-6.999573 z"
+           sodipodi:nodetypes="cccccccccccccccccccccccccccccccccc" />
         <path
            id="path1998-7"
            style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:#96f2a9;fill-opacity:1;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000000"
@@ -847,6 +842,12 @@
            style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:#808080;fill-opacity:1;stroke:#ff0000;stroke-width:0.265;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000000"
            d="m 106,14 h 15 v 9 h -4 v -2 h -11 z"
            sodipodi:nodetypes="ccccccc" />
+        <path
+           id="rect1574-1-2-7-2"
+           style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:#808080;fill-opacity:1;stroke:#ff0000;stroke-width:0.265;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
+           inkscape:label="fxxx"
+           d="M 152.0004,42 152,27 h 7 v 14 h 2 v 5 h -8 v -4 z"
+           sodipodi:nodetypes="ccccccccc" />
       </g>
     </g>
     <g
@@ -1616,43 +1617,48 @@
         <path
            id="rect1574-1-2-9-4-5"
            style="display:inline;vector-effect:none;fill:#96f2a9;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;paint-order:markers fill stroke;stop-color:#000000"
-           inkscape:label="fxxx"
+           inkscape:label="f801"
            d="M 106.0004,14 106,21 h 9.00006 c 3e-5,-0.55224 0.4477,-0.99991 0.99994,-0.99994 V 21 h 1 v -7 z"
            sodipodi:nodetypes="cccccccc" />
         <path
            id="rect1574-1-2-9-4-5-0"
            style="display:inline;opacity:1;vector-effect:none;fill:#96f2a9;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;paint-order:markers fill stroke;stop-color:#000000"
-           inkscape:label="fxxx"
+           inkscape:label="f802"
            d="m 117,14 -4e-4,7 h 10.00046 c 3e-5,-0.55224 0.4477,-0.99991 0.99994,-0.99994 V 21 h 1 v -7 z"
            sodipodi:nodetypes="cccccccc" />
         <path
            id="rect1574-1-2-9-4-5-0-3"
            style="display:inline;vector-effect:none;fill:#96f2a9;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;paint-order:markers fill stroke;stop-color:#000000"
-           inkscape:label="fxxx"
+           inkscape:label="f803"
            d="m 129.00017,14 -4e-4,7 h 12.00029 c 3e-5,-0.55224 0.4477,-0.99991 0.99994,-0.99994 V 21 h 1 v -7 z"
            sodipodi:nodetypes="cccccccc" />
         <path
            id="rect1574-1-2-9-4-5-0-3-1"
            style="display:inline;opacity:1;vector-effect:none;fill:#96f2a9;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;paint-order:markers fill stroke;stop-color:#000000"
-           inkscape:label="fxxx"
+           inkscape:label="f805"
            d="m 148.00009,14 -4e-4,7 h 13.00037 c 3e-5,-0.55224 0.4477,-0.99991 0.99994,-0.99994 V 21 h 1 v -7 z"
            sodipodi:nodetypes="cccccccc" />
         <path
            id="rect1574-1-2-9-4-5-0-3-6"
            style="display:inline;opacity:1;vector-effect:none;fill:#96f2a9;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;paint-order:markers fill stroke;stop-color:#000000"
-           inkscape:label="fxxx"
+           inkscape:label="f804"
            d="m 143,14 -4e-4,7 3.00046,-6e-5 C 146.00009,20.4477 146.44776,20.00003 147,20 v 0.99994 h 1 v -7 z"
            sodipodi:nodetypes="cccccccc" />
         <path
            id="rect1574-1-2-9-4-5-0-3-6-0"
            style="display:inline;vector-effect:none;fill:#96f2a9;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;paint-order:markers fill stroke;stop-color:#000000"
-           inkscape:label="fxxx"
+           inkscape:label="f806"
            d="m 162.99987,14.000179 -5.2e-4,6.999573 h 1.00046 v -0.999939 c 0.55224,3e-5 0.99991,0.447699 0.99994,0.999939 3e-5,-0.55224 0.4477,-0.999909 0.99994,-0.999939 v 0.999939 h 9.00048 v -6.999573 z" />
         <path
-           id="rect1574-1-2-9-4-4"
            style="display:inline;vector-effect:none;fill:#96f2a9;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;paint-order:markers fill stroke;stop-color:#000000"
-           inkscape:label="f808"
-           d="M 117,42 V 28 l -1.00006,6e-5 C 115.99991,28.5523 115.55224,28.99997 115,29 v -0.99994 h -1 V 32 h -8 V 42 Z M 106,32 h 8 v -5.00006 c -0.55224,-3e-5 -0.99991,-0.4477 -0.99994,-0.99994 H 114 v -1 l -8,4e-4 z" />
+           d="m 106,32 h 8 v -5.00006 c -0.55224,-3e-5 -0.99991,-0.4477 -0.99994,-0.99994 H 114 v -1 l -8,4e-4 z"
+           id="path1160"
+           inkscape:label="f807" />
+        <path
+           style="display:inline;vector-effect:none;fill:#96f2a9;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;paint-order:markers fill stroke;stop-color:#000000"
+           d="M 117,42 V 28 l -1.00006,6e-5 C 115.99991,28.5523 115.55224,28.99997 115,29 v -0.99994 h -1 V 32 h -8 v 10 z"
+           id="rect1574-1-2-9-4-4"
+           inkscape:label="f808" />
         <path
            id="path1998-7-7"
            style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:#96f2a9;fill-opacity:1;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000000"
@@ -1694,7 +1700,7 @@
   <g
      id="layer15"
      inkscape:label="andar-3,piso superior"
-     style="display:none;opacity:0.5"
+     style="display:inline;opacity:0.5"
      inkscape:groupmode="layer">
     <path
        id="path4012"
