@@ -46,7 +46,7 @@
 		},
 		{
 			"sigla": "SPODETC",
-			"nome": "DESENHO TÉCNICO AUXILIADO POR COMPTADOR",
+			"nome": "DESENHO TÉCNICO AUXILIADO POR COMPUTADOR",
 			"professores": [
 				"Daniel Santos",
 				"Marcos Guimaraes"
@@ -77,7 +77,7 @@
 		},
 		{
 			"sigla": "SPOGAVE",
-			"nome": "EOMETRIA ANALÍTICA E VETORIAL",
+			"nome": "GEOMETRIA ANALÍTICA E VETORIAL",
 			"professores": [
 				"Tiago Menezes"
 			]
@@ -400,13 +400,13 @@
 			"sigla": "REDIS",
 			"nome": "REDES INDUSTRIAIS E SUPERVISÓRIOS",
 			"professores": [
-				"Gilberto Igarash",
+				"Gilberto Igarashi",
 				"Waldemar Panades"
 			]
 		},
 		{
 			"sigla": "COMGE",
-			"nome": "COMERCIALIZAÇÃO E GESTÃ DE ENERGIA ELÉTRICA",
+			"nome": "COMERCIALIZAÇÃO E GESTÃO DE ENERGIA ELÉTRICA",
 			"professores": [
 				"Luiz Rosa"
 			]
