@@ -560,11 +560,11 @@ function selhora_agora() {
 }
 
 function load_version() {
-	fetch("https://api.github.com/repos/CA-Nikola-Tesla/mapa-de-salas/commits?per_page=1")
+	fetch("https://api.github.com/repos/CA-Nikola-Tesla/mapa-de-salas/deployments?environment=github-pages&per_page=1")
 	.then(res => res.json())
 	.then(res =>
 		{
-			var date = new Date(res[0].commit.author.date);
+			var date = new Date(res[0].created_at);
 			el("spanversion").innerHTML = "Última atualização: " +
 				"<a target=_blank href='https://github.com/CA-Nikola-Tesla/mapa-de-salas/commit/" + res[0].sha + "'>" +
 				date.toLocaleString("pt-BR") + "</a>";
