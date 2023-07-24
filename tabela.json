@@ -1,9 +1,9 @@
 {
 	"lista-turmas": [
-		"EE1",
-		"EE3",
-		"EE5",
-		"EE7"
+		"EE2",
+		"EE4",
+		"EE6",
+		"EE8"
 	],
 	"lista-dias": [
 		"segunda-feira",
@@ -85,30 +85,35 @@
 
 		{ "::": "EE2" },
 		{
-			"sigla": "CALC2",
-			"nome": "CÁLCULO DIFERENCIAL E INTEGRAL 2"
-
-		},
-		{
-			"sigla": "ALGLN",
-			"nome": "ÁLGEBRA LINEAR"
-		},
-		{
-			"sigla": "CIAMB",
+			"sigla": "SPOCIAM",
 			"nome": "CIÊNCIAS AMBIENTAIS",
 			"professores": [
-				"Thayana Gimenes"
+				"Maria Suzumura"
 			]
 		},
 		{
-			"sigla": "SEGEL",
+			"sigla": "SPOALGL",
+			"nome": "ÁLGEBRA LINEAR",
+			"professores": [
+				"Luciano Magrini"
+			]
+		},
+		{
+			"sigla": "SPOCAL2",
+			"nome": "CÁLCULO DIFERENCIAL E INTEGRAL 2",
+			"professores": [
+				"David Pinho"
+			]
+		},
+		{
+			"sigla": "SPOSEGE",
 			"nome": "SEGURANÇA DO TRABALHO EM ELETRICIDADE",
 			"professores": [
 				"Luis Matos"
 			]
 		},
 		{
-			"sigla": "CIDIG",
+			"sigla": "SPOCIDI",
 			"nome": "CIRCUITOS DIGITAIS",
 			"professores": [
 				"Haroldo Guibu",
@@ -116,7 +121,7 @@
 			]
 		},
 		{
-			"sigla": "DISEE",
+			"sigla": "SPODIEE",
 			"nome": "DISPOSITIVOS E EQUIPAMENTOS ELETROELETRÔNICOS",
 			"professores": [
 				"Fulvio Prevot",
@@ -124,7 +129,7 @@
 			]
 		},
 		{
-			"sigla": "ELOA1",
+			"sigla": "SPOELN1",
 			"nome": "ELETRÔNICA 1",
 			"professores": [
 				"Haroldo Guibu",
@@ -305,7 +310,10 @@
 		{ "::": "EE6" },
 		{
 			"sigla": "REMAT",
-			"nome": "RESISTÊNCIA DOS MATERIAIS"
+			"nome": "RESISTÊNCIA DOS MATERIAIS",
+			"professores": [
+				"Rogerio Erbereli"
+			]
 		},
 		{
 			"sigla": "DIRCE",
@@ -332,8 +340,7 @@
 			"sigla": "CONS1",
 			"nome": "CONTROLE E SERVOMECANISMO 1",
 			"professores": [
-				"Caio Chinelato",
-				"Tarcisio Leao"
+				"Caio Chinelato"
 			]
 		},
 		{
@@ -417,6 +424,67 @@
 			"professores": [
 				"Caio Chinelato",
 				"Jose Neto"
+			]
+		},
+
+		{ "::": "EE8" },
+		{
+			"sigla": "MECIT",
+			"nome": "METODOLOGIA CIENTÍFICA E TECNOLÓGICA",
+			"professores": [
+				"Akira Furucho"
+			]
+		},
+		{
+			"sigla": "TINOV",
+			"nome": "TÓPICOS INOVADORES EM ENGENHARIA ELÉTRICA",
+			"professores": [
+				"Alexandre Ventieri",
+				"Tarcisio Leao"
+			]
+		},
+		{
+			"sigla": "QUAEE",
+			"nome": "QUALIDADE DE ENERGIA",
+			"professores": [
+				"Luis Matos"
+			]
+		},
+		{
+			"sigla": "EFICE",
+			"nome": "EFICIÊNCIA ENERGÉTICA",
+			"professores": [
+				"Cintia Goncalves",
+				"Mario Cambraia"
+			]
+		},
+		{
+			"sigla": "DITEE",
+			"nome": "DISTRIBUIÇÃO DE ENERGIA ELÉTRICA",
+			"professores": [
+				"Luiz Rosa"
+			]
+		},
+		{
+			"sigla": "PROTE",
+			"nome": "PROTEÇÃO DE SISTEMAS ELÉTRICOS",
+			"professores": [
+				"Luiz Matos"
+			]
+		},
+		{
+			"sigla": "PLAEE",
+			"nome": "PLANEJAMENTO ENERGÉTICO E ELÉTRICO",
+			"professores": [
+				"Jacyro Junior"
+			]
+		},
+		{
+			"sigla": "FOTOV",
+			"nome": "SISTEMAS FOTOVOLTÁICOS",
+			"professores": [
+				"Luiz Rosa",
+				"Mario Cambraia"
 			]
 		},
 
@@ -528,6 +596,23 @@
 			]
 		},
 		{
+			"turma": "EE2",
+			"aulas": [
+				[ "SPOCAL2", "SPOCAL2", "SPOCAL2", "SPOCIAM", "SPOCIAM" ],
+				[ "SPOCIDI", "SPOCIDI", "SPOCIDI", "SPOCIDI", "SPOCIDI" ],
+				[ "SPOELN1", "SPOELN1", "SPOELN1", "SPOELN1", "SPOELN1" ],
+				[ "SPOSEGE", "SPOSEGE", "SPODIEE", "SPODIEE", "SPODIEE" ],
+				[ "SPOCAL2", "SPOCAL2", "SPOALGL", "SPOALGL", "SPOALGL" ]
+			],
+			"salas": [
+				[ [ "a310" ], [ "a310" ], [ "a310" ], [ "d205" ], [ "d205" ] ],
+				[ [ "d203", "d214" ], [ "d203", "d214" ], [ "d203", "d214" ], [ "d203", "d214" ], [ "d203", "d214" ] ],
+				[ [ "c206", "d216" ], [ "c206", "d216" ], [ "c206", "d216" ], [ "c206", "d216" ], [ "c206", "d216" ] ],
+				[ [ "d211" ], [ "d211" ], [ "d109", "d211" ], [ "d109", "d211" ], [ "d109", "d211" ] ],
+				[ [ "d211" ], [ "d211" ], [ "d211" ], [ "d211" ], [ "d211" ] ]
+			]
+		},
+		{
 			"turma": "EE3",
 			"aulas": [
 				[ "FISEL", "FISEL", "QUITE", "QUITE", "QUITE" ],
@@ -542,6 +627,23 @@
 				[ [ "c206", "d206" ], [ "c206", "d206" ], [ "c206", "d206" ], [ "c206", "d206" ], [ "c206", "d206" ] ],
 				[ [ "c206" ], [ "c206" ], [ "c206" ], [ "c206" ], [ "c206" ] ],
 				[ [ "c209" ], [ "c209" ], [ "f805" ], [ "f805" ], [ "f805" ] ]
+			]
+		},
+		{
+			"turma": "EE4",
+			"aulas": [
+				[ "FENOT", "FENOT", "EMAG1", "EMAG1", "EMAG1" ],
+				[ "CIEL1", "CIEL1", "CIEL1", "CIEL1", "CIEL1" ],
+				[ "INSTE", "INSTE", "INSTE", "INSTE", "INSTE" ],
+				[ "CANUA", "CANUA", "CONVE", "CONVE", "CONVE" ],
+				[ "ELPOT", "ELPOT", "ELPOT", "ELPOT", "ELPOT" ]
+			],
+			"salas": [
+				[ [ "d215" ], [ "d215" ], [ "d215" ], [ "d215" ], [ "d215" ] ],
+				[ [ "c206", "d212" ], [ "c206", "d212" ], [ "c206", "d212" ], [ "c206", "d212" ], [ "c206", "d212" ] ],
+				[ [ "d114", "d215" ], [ "d114", "d215" ], [ "d114", "d215" ], [ "d114", "d215" ], [ "d114", "d215" ] ],
+				[ [ "d205" ], [ "d205" ], [ "d205" ], [ "d205" ], [ "d205" ] ],
+				[ [ "d115", "d213" ], [ "d115", "d213" ], [ "d115", "d213" ], [ "d115", "d213" ], [ "d115", "d213" ] ]
 			]
 		},
 		{
@@ -563,6 +665,23 @@
 			]
 		},
 		{
+			"turma": "EE6",
+			"aulas": [
+				[ "CONS1", "CONS1", "CONS1", "CONS1", "CONS1" ],
+				[ "TERMO", "TERMO", "GEREE", "GEREE", "GEREE" ],
+				[ "EMPRE", "EMPRE", "REMAT", "REMAT", "REMAT" ],
+				[ "CLPRO", "CLPRO", "CLPRO", "CLPRO", "CLPRO" ],
+				[ "MATEL", "MATEL", "MATEL", "DIRCE", "DIRCE" ]
+			],
+			"salas": [
+				[ [ "c203", "d224" ], [ "c203", "d224" ], [ "c203", "d224" ], [ "c203", "d224" ], [ "c203", "d224" ] ],
+				[ [ "d113" ], [ "d113" ], [ "d205" ], [ "d205" ], [ "d205" ] ],
+				[ [ "d202" ], [ "d202" ], [ "d205" ], [ "d205" ], [ "d205" ] ],
+				[ [ "c206", "d209" ], [ "c206", "d209" ], [ "c206", "d209" ], [ "c206", "d209" ], [ "c206", "d209" ] ],
+				[ [ "c209" ], [ "c209" ], [ "c209" ], [ "d223" ], [ "d223" ] ]
+			]
+		},
+		{
 			"turma": "EE7",
 			"aulas": [
 				[ "TRAEE", "TRAEE", "TRAEE", "TRAEE", "TRAEE" ],
@@ -577,6 +696,21 @@
 				[ [ "d213" ], [ "d213" ], [ "d213" ], [ "d213" ], [ "d213" ] ],
 				[ [ "c208" ], [ "c208" ], [ "c208" ], [ "d213" ], [ "d213" ] ],
 				[ [ "c207", "d224" ], [ "c207", "d224" ], [ "c207", "d224" ] ]
+			]
+		},
+		{
+			"turma": "EE8",
+			"aulas": [
+				[ "PLAEE", "PLAEE", "EFICE", "EFICE", "EFICE" ],
+				[ "FOTOV", "FOTOV", "DITEE", "DITEE", "DITEE" ],
+				[ "TINOV", "TINOV", "PROTE", "PROTE", "PROTE" ],
+				[ "MECIT", "MECIT", "QUAEE", "QUAEE", "QUAEE" ]
+			],
+			"salas": [
+				[ [ "d213" ], [ "d213" ], [ "d113", "d213" ], [ "d113", "d213" ], [ "d113", "d213" ] ],
+				[ [ "d211", "d217" ], [ "d211", "d217" ], [ "d211" ], [ "d211" ], [ "d211" ] ],
+				[ [ "d211" ], [ "d211" ], [ "d213" ], [ "d213" ], [ "d213" ] ],
+				[ [ "d213" ], [ "d213" ], [ "d213" ], [ "d213" ], [ "d213" ] ]
 			]
 		}
 	]
