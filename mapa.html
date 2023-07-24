@@ -11,15 +11,20 @@
 				<select id="selturma"></select>
 				<select id="seldia"></select>
 				<select id="selhora"></select>
-				<select id="selsala"></select>
+				<select style="display: none" id="selsala"></select>
+				<span id="spansearch" style="display: none">
+				&nbsp; &nbsp;
+				<a href="#" onclick="javascript:search_sala()">&#x1F50D;</a>
+				</span>
 			</fieldset>
+			<div id="divsearchback" style="display: none">Voltar</div>
 		</div>
 		<div id="loadingdiv"><br />Carregando...<br /></div>
 		<div id="errordiv" style="display: none">Dados indisponíveis</div>
 		<div id="infodiv" style="display: none">
-			<span id="materiaspan">NOME DA MATERIA</span><br />
-			<span id="professorspan">Nome do Professor</span><br />
-			<span id="salaspan">SALA</span><br />
+			<span id="materiaspan"></span><br />
+			<span id="professorspan"></span><br />
+			<span id="salaspan"></span><br />
 		</div>
 		<div id="nomapdiv" style="display: none">
 			<br />
@@ -53,6 +58,7 @@
 			<br />
 			<span id="spanversion"></span>
 		</div>
+		<script src="table.js"></script>
 		<script src="script.js"></script>
 		<script>
 

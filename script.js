@@ -14,7 +14,7 @@ function get_children_with_label(root, label_regex) {
 		if (label !== null && label_regex.test(label))
 			ret.push(root.children[i]);
 	}
-	return ret;				
+	return ret;
 }
 
 function get_real_bb(el) {
@@ -171,7 +171,6 @@ function zoom_bloco(andar_n, bloco_l) {
 				"");
 		}
 	}
-
 }
 
 function show_sala(sala_n) {
@@ -216,11 +215,65 @@ function show_sala(sala_n) {
 	}
 }
 
-function show_disc_info(sigla, nome, professores, salas) {
-	el("materiaspan").innerText = sigla + " - " + nome;
-	el("professorspan").innerText = "Prof" + (professores.length > 1 ? "s" : "") + ".: " + professores.join(", ");
-	el("salaspan").innerText = "Sala" + (salas.length > 1 ? "s" : "") +  ": " + salas.join(", ").toUpperCase();
+function show_disc_info(sigla) {
+	if (sigla ===undefined) {
+		el("materiaspan").innerText = "Não há aula neste horário";
+		el("professorspan").innerText = "";
+	} else {
+		var info = table_get_disciplina_por_sigla(sigla);
+		if (info === undefined) {
+			console.log("disciplina inexistente");
+			return;
+		}
+
+		var nome = info["nome"];
+		var professores = info["professores"];
+
+		if (nome === undefined)
+			nome = "";
+		else
+			nome = " - " + nome;
+
+		if (professores === undefined)
+			professores = [ "N/D" ];
+
+		el("materiaspan").innerText = sigla + nome;
+		el("professorspan").innerText = "Prof" + (professores.length > 1 ? "s" : "") + ".: " + professores.join(", ");
+	}
 	el("infodiv").style.removeProperty("display");
+}
+
+function change_select_sala(idx) {
+	el("selsala").selectedIndex = idx;
+	evt_change_sala();
+}
+
+function show_salas_link(salas, cidx) {
+	el("salaspan").innerHTML = "Sala" + (salas.length > 1 ? "s" : "") + ": ";
+	for (var i = 0; i < salas.length; i++) {
+		if (cidx == i)
+			a_class = " class='csala'";
+		else
+			a_class = "";
+		el("salaspan").innerHTML += "<a href='#'" + a_class + " onclick='javascript:change_select_sala(" + i + ")'>" + salas[i].toUpperCase() + "</a>";
+		if (i < salas.length - 1)
+			el("salaspan").innerHTML += ", ";
+	}
+}
+
+function show_horario(turma, dia_idx, hora_idx, sala_idx) {
+	var sigla = table_get_horario_disciplina(turma, dia_idx, hora_idx);
+	var salas = table_get_horario_salas(turma, dia_idx, hora_idx);
+
+	show_disc_info(sigla);
+
+	if (salas !== undefined) {
+		show_salas_link(salas, sala_idx);
+		show_sala(salas[sala_idx]);
+	} else {
+		show_sala("");
+		el("salaspan").innerText = "";
+	}
 }
 
 function set_el_view(el, prefix, view) {
@@ -356,8 +409,8 @@ function load_sel(selname, tblname) {
 
 function fill_salas_sel() {
 	el("selsala").innerHTML = "";
-	var salas = find_salas(el("selturma").value, el("seldia").value, el("selhora").value);
-	if (salas !== null && salas.length > 0) {
+	var salas = table_get_horario_salas(el("selturma")[el("selturma").selectedIndex].text, el("seldia").value, el("selhora").value);
+	if (salas !== undefined) {
 		for (var i = 0; i < salas.length; i++)
 			el("selsala").innerHTML += "<option value='" + i + "'>" + salas[i].toUpperCase() + "</option>";
 	} else {
@@ -389,16 +442,6 @@ function get_disc_info(turma_idx, dia_idx, hora_idx) {
 	if( disc_info === undefined)
 		disc_info = { "sigla": disc_sigla, "nome": "N/D", "professores": [ "N/D" ], "salas": [ "N/D" ] };
 	return disc_info;
-}
-
-function find_salas(turma_idx, dia_idx, hora_idx) {
-	var disc_info = get_disc_info(turma_idx, dia_idx, hora_idx);
-	if (disc_info === null)
-		return null;
-	var salas = table["horarios"][turma_idx]["salas"][dia_idx][hora_idx].slice();
-	if (salas === undefined)
-		salas = [];
-	return salas;
 }
 
 function get_sala_old_name(new_name) {
@@ -449,7 +492,9 @@ function evt_change_sel(evt) {
 
 function evt_change_sala(evt) {
 	save_cookie_turma();
-	var disc_info = get_disc_info(el("selturma").value, el("seldia").value, el("selhora").value);
+	show_horario(el("selturma")[el("selturma").selectedIndex].text, el("seldia").value, el("selhora").value, el("selsala").value);
+	return;
+	//var disc_info = get_disc_info(el("selturma").value, el("seldia").value, el("selhora").value);
 	if (disc_info !== null) {
 		el("errordiv").style.setProperty("display", "none");
 		el("infodiv").style.removeProperty("display");
@@ -557,6 +602,25 @@ function selhora_agora() {
 	if (sel_idx < 0)
 		sel_idx = htbl.length - 1;
 	el("selhora").selectedIndex = sel_idx;
+}
+
+function search_sala() {
+	var in_name = prompt("Buscar sala por número");
+	console.log("search: " + in_name);
+	if (in_name === null)
+		return;
+
+	var sname = get_sala_new_name(in_name);
+	if (sname === null)
+		sname = in_name;
+
+	var sala = get_sala(sname.toLowerCase());
+	if (sala === null) {
+		alert("Sala não encontrada: " + in_name);
+		return
+	}
+
+	show_sala(sname.toLowerCase());
 }
 
 function load_version() {
