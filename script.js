@@ -315,8 +315,9 @@ function load_map() {
 				init_table();
 				init_map();
 				load_cookie_turma();
-				seldia_hoje();
-				selhora_agora();
+				if (seldia_hoje())
+					selhora_agora();
+
 				evt_change_sel();
 				el("selectdiv").style.removeProperty("display");
 			});
@@ -567,13 +568,18 @@ function load_cookie_turma() {
 }
 
 function seldia_hoje() {
+	var ret = true;
 	var now = new Date();
 	var idx = now.getDay() - 1;
-	if ((now.getHours() == 22 && now.getMinutes() > 50) || now.getHours() > 22)
+	if ((now.getHours() == 22 && now.getMinutes() > 50) || now.getHours() > 22) {
 		idx++;
+	}
 	if (idx >= 0 && idx <= 4) {
 		el("seldia").selectedIndex = idx;
+	} else {
+		ret = false;
 	}
+	return ret;
 }
 
 function selhora_agora() {
