@@ -330,7 +330,8 @@
       <g
          inkscape:groupmode="layer"
          id="layer46"
-         inkscape:label="legendas">
+         inkscape:label="legendas"
+         style="display:inline">
         <path
            id="path7900"
            style="font-size:1.76389px;font-family:monospace;-inkscape-font-specification:monospace;display:inline;opacity:0.5;stroke-width:0.265;stroke-linecap:square;paint-order:markers fill stroke;stop-color:#000000"
@@ -889,7 +890,7 @@
   <g
      id="g1606"
      inkscape:label="andar-2,mezanino"
-     style="display:none;opacity:0.5"
+     style="display:inline;opacity:0.5"
      inkscape:groupmode="layer">
     <path
        id="path19381"
@@ -1162,7 +1163,7 @@
       <g
          inkscape:groupmode="layer"
          id="g5033"
-         inkscape:label="legendas-hide"
+         inkscape:label="legendas"
          style="display:inline;opacity:0.5">
         <path
            id="path9110"
@@ -1755,7 +1756,7 @@
   <g
      id="layer15"
      inkscape:label="andar-3,piso superior"
-     style="display:inline;opacity:0.5"
+     style="display:none;opacity:0.5"
      inkscape:groupmode="layer">
     <path
        id="path4012"

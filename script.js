@@ -105,6 +105,10 @@ function get_sem_acesso(bloco) {
 	return get_els_by_group_label(bloco, /^sem-acesso$/);
 }
 
+function get_legendas(bloco) {
+	return get_els_by_group_label(bloco, /^legendas$/);
+}
+
 function get_escadas(bloco) {
 	return get_els_by_group_label(bloco, /^escadas$/);
 }
@@ -372,6 +376,10 @@ function init_map() {
 				if (old_name !== null)
 					full_name = old_name + "/" + full_name;
 				add_text_next_to_svg_el(salas[k], full_name);
+			}
+			var legendas = get_legendas(blocos[j]);
+			for (var k = 0; k < legendas.length; k++) {
+				legendas[k].style.setProperty("display", "none");
 			}
 			var sem_acesso = get_sem_acesso(blocos[j]);
 			for (var k = 0; k < sem_acesso.length; k++) {
