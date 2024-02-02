@@ -1,9 +1,10 @@
 {
 	"lista-turmas": [
-		"EE2",
-		"EE4",
-		"EE6",
-		"EE8"
+		"EE1",
+		"EE3",
+		"EE5",
+		"EE7",
+		"EE9"
 	],
 	"lista-dias": [
 		"segunda-feira",
@@ -33,22 +34,21 @@
 			"sigla": "SPOFIT1",
 			"nome": "FÍSICA TEÓRICA E EXPERIMENTAL",
 			"professores": [
-				"Gustavo Killner",
-				"Marcio Corrallo"
+				"Daniel Moura",
+				"Gustavo Killner"
 			]
 		},
 		{
 			"sigla": "SPOCAL1",
 			"nome": "CÁLCULO DIFERENCIAL E INTEGRAL 1",
 			"professores": [
-				"Tiago Menezes"
+				"Ricardo Batista"
 			]
 		},
 		{
 			"sigla": "SPODETC",
 			"nome": "DESENHO TÉCNICO AUXILIADO POR COMPUTADOR",
 			"professores": [
-				"Daniel Santos",
 				"Marcos Guimaraes"
 			]
 		},
@@ -56,30 +56,30 @@
 			"sigla": "SPOCOMX",
 			"nome": "COMUNICAÇÃO E EXPRESSÃO",
 			"professores": [
-				"Kelly Lima"
+				"Tais Silva"
 			]
 		},
 		{
 			"sigla": "SPOINEE",
 			"nome": "INTRODUÇÃO À ENGENHARIA ELÉTRICA",
 			"professores": [
-				"Jacyro Junior",
-				"Tarcisio Leao"
+				"Tarcisio Leao",
+				"Wagner Aguiar"
 			]
 		},
 		{
 			"sigla": "SPOELET",
 			"nome": "ELETRICIDADE",
 			"professores": [
-				"Shiga Alberto",
-				"Alexandre Ventieri"
+				"Alexandre Ventieri",
+				"Wagner Aguiar"
 			]
 		},
 		{
 			"sigla": "SPOGAVE",
 			"nome": "GEOMETRIA ANALÍTICA E VETORIAL",
 			"professores": [
-				"Tiago Menezes"
+				"Marcela Alves"
 			]
 		},
 
@@ -139,22 +139,21 @@
 
 		{ "::": "EE3" },
 		{
-			"sigla": "FISEL",
+			"sigla": "SPOFISE",
 			"nome": "FÍSICA TEÓRICA 2 - ELÉTRICA",
 			"professores": [
-				"Tatiane Sales"
+				"N/D"
 			]
 		},
 		{
-			"sigla": "QUITE",
+			"sigla": "SPOQUTE",
 			"nome": "QUÍMICA TEÓRICA E EXPERIMENTAL",
 			"professores": [
-				"Caio Souza",
 				"Gabriela Santiago"
 			]
 		},
 		{
-			"sigla": "LIPRO",
+			"sigla": "SPOLIPR",
 			"nome": "LINGUAGEM DE PROGRAMAÇÃO",
 			"professores": [
 				"Elaine Bueno",
@@ -162,7 +161,7 @@
 			]
 		},
 		{
-			"sigla": "ELOA2",
+			"sigla": "SPOELN2",
 			"nome": "ELETRÔNICA 2",
 			"professores": [
 				"Haroldo Guibu",
@@ -170,31 +169,31 @@
 			]
 		},
 		{
-			"sigla": "CAPLE",
+			"sigla": "SPOCAPL",
 			"nome": "CÁLCULO APLICADO À ELÉTRICA",
 			"professores": [
 				"Fulvio Prevot"
 			]
 		},
 		{
-			"sigla": "ESTAP",
+			"sigla": "SPOESTA",
 			"nome": "ESTATÍSTICA APLICADA À PROBABILIDADE",
 			"professores": [
 				"Fulvio Prevot"
 			]
 		},
 		{
-			"sigla": "CIEMA",
+			"sigla": "SPOCIEM",
 			"nome": "CIÊNCIA DOS MATERIAIS",
 			"professores": [
 				"Sara Santos"
 			]
 		},
 		{
-			"sigla": "MECAB",
+			"sigla": "SPOMECB",
 			"nome": "MECÂNICA APLICADA BÁSICA",
 			"professores": [
-				"Garabed Kenchian"
+				"Rogerio Erbereli"
 			]
 		},
 
@@ -257,7 +256,7 @@
 			"sigla": "LUMIN",
 			"nome": "LUMINOTÉCNICA",
 			"professores": [
-				"Mario Cambraia"
+				"Cintia Goncalves"
 			]
 		},
 		{
@@ -287,14 +286,14 @@
 			"sigla": "ADMIN",
 			"nome": "TEORIA GERAL DA ADMINISTRAÇÃO",
 			"professores": [
-				"Antonio Filho"
+				"Antonio Faricelli"
 			]
 		},
 		{
 			"sigla": "MAQEL",
 			"nome": "MÁQUINAS ELÉTRICAS",
 			"professores": [
-				"João Silva",
+				"Alaor Saccomano",
 				"Marcel Wu"
 			]
 		},
@@ -386,7 +385,8 @@
 			"sigla": "SISMM",
 			"nome": "SISTEMAS MICROPROCESSADOS E MICROCONTROLADOS",
 			"professores": [
-				"Hugo Magalhães"
+				"Hugo Magalhães",
+				"Wagner Aguiar"
 			]
 		},
 		{
@@ -408,7 +408,7 @@
 			"nome": "REDES INDUSTRIAIS E SUPERVISÓRIOS",
 			"professores": [
 				"Gilberto Igarashi",
-				"Waldemar Panades"
+				"Jacyro Junior"
 			]
 		},
 		{
@@ -423,7 +423,7 @@
 			"nome": "CONTROLE E SERVOMECANISMO 2",
 			"professores": [
 				"Caio Chinelato",
-				"Jose Neto"
+				"Hugo Magalhaes"
 			]
 		},
 
@@ -485,6 +485,52 @@
 			"professores": [
 				"Luiz Rosa",
 				"Mario Cambraia"
+			]
+		},
+
+		{ "::": "EE9" },
+		{
+			"sigla": "PROJ1",
+			"nome": "PROJETOS 1",
+			"professores": [
+				"Tarcisio Leao",
+				"Wagner Aguiar"
+			]
+		},
+		{
+			"sigla": "COGER",
+			"nome": "COGERAÇÃO DE ENERGIA ELÉTRICA",
+			"professores": [
+				"Cintia Goncalves"
+			]
+		},
+		{
+			"sigla": "SIPOT",
+			"nome": "SISTEMAS DE POTÊNCIA",
+			"professores": [
+				"Luiz Rosa"
+			]
+		},
+		{
+			"sigla": "MODSE",
+			"nome": "MODELAGEM DE SISTEMAS ELÉTRICOS",
+			"professores": [
+				"Joao Brito",
+				"Walter Ragnev"
+			]
+		},
+		{
+			"sigla": "CONTA",
+			"nome": "CONTABILIDADE DE CUSTOS",
+			"professores": [
+				"Maria Suzumura"
+			]
+		},
+		{
+			"sigla": "PREMA",
+			"nome": "PROJETOS ELÉTRICOS DE MÉDIA E ALTA TENSÃO",
+			"professores": [
+				"Luis Matos"
 			]
 		},
 
@@ -589,10 +635,10 @@
 			],
 			"salas": [
 				[ [ "c206", "d216" ], [ "c206", "d216" ], [ "c206", "d216" ], [ "c206", "d216" ], [ "c206", "d216" ] ],
-				[ [ "a333", "a356" ], [ "a333", "a356" ], [ "a321" ], [ "a321" ], [ "a321" ] ],
-				[ [ "a321" ], [ "a321" ] ,[ "a321" ] ,[ "d224" ] ,[ "d224" ] ],
-				[ [ "c202", "c203", "f805" ], [ "c202", "c203", "f805" ], [ "c202", "c203", "f805" ], [ "c202" ], [ "c202" ] ],
-				[ [ "a321" ], [ "a321" ], [ "a321" ], [ "a321" ], [ "a321" ] ]
+				[ [ "a333", "a322" ], [ "a333", "a322" ], [ "a319" ], [ "a319" ], [ "a319" ] ],
+				[ [ "a319" ], [ "a319" ] ,[ "a319" ] ,[ "d224" ] ,[ "d224" ] ],
+				[ [ "c202", "c203" ], [ "c202", "c203" ], [ "c202", "c203" ], [ "a319" ], [ "a319" ] ],
+				[ [ "a319" ], [ "a319" ], [ "a319" ], [ "a302" ], [ "a302" ] ]
 			]
 		},
 		{
@@ -615,15 +661,15 @@
 		{
 			"turma": "EE3",
 			"aulas": [
-				[ "FISEL", "FISEL", "QUITE", "QUITE", "QUITE" ],
-				[ "LIPRO", "LIPRO", "LIPRO", "LIPRO", "LIPRO" ],
-				[ "ELOA2", "ELOA2", "ELOA2", "ELOA2", "ELOA2" ],
-				[ "CAPLE", "CAPLE", "CAPLE", "ESTAP", "ESTAP" ],
-				[ "CIEMA", "CIEMA", "MECAB", "MECAB", "MECAB" ]
+				[ "SPOFISE", "SPOFISE", "SPOQUTE", "SPOQUTE", "SPOQUTE" ],
+				[ "SPOLIPR", "SPOLIPR", "SPOLIPR", "SPOLIPR", "SPOLIPR" ],
+				[ "SPOELN2", "SPOELN2", "SPOELN2", "SPOELN2", "SPOELN2" ],
+				[ "SPOCAPL", "SPOCAPL", "SPOCAPL", "SPOESTA", "SPOESTA" ],
+				[ "SPOCIEM", "SPOCIEM", "SPOMECB", "SPOMECB", "SPOMECB" ]
 			],
 			"salas": [
-				[ [ "a321" ], [ "a321" ], [ "a321" ], [ "a321" ], [ "a321" ] ],
-				[ [ "c208" ], [ "c208" ], [ "c208" ], [ "c208" ], [ "c208" ] ],
+				[ [ "a319" ], [ "a319" ], [ "a319" ], [ "a319" ], [ "a319" ] ],
+				[ [ "c207", "c208" ], [ "c207", "c208" ], [ "c207", "c208" ], [ "c207", "c208" ], [ "c207", "c208" ] ],
 				[ [ "c206", "d206" ], [ "c206", "d206" ], [ "c206", "d206" ], [ "c206", "d206" ], [ "c206", "d206" ] ],
 				[ [ "c206" ], [ "c206" ], [ "c206" ], [ "c206" ], [ "c206" ] ],
 				[ [ "c209" ], [ "c209" ], [ "f805" ], [ "f805" ], [ "f805" ] ]
@@ -658,10 +704,10 @@
 			],
 			"salas": [
 				[ [ "d215" ], [ "d215" ], [ "d215" ], [ "d215" ], [ "d215" ] ],
-				[ [ "c206", "d212" ], [ "c206", "d212" ], [ "c206", "d212" ], [ "c206", "d212" ], [ "c206", "d212" ] ],
-				[ [ "d114", "d211" ], [ "d114", "d211" ], [ "d114", "d211" ], [ "d222" ], [ "d222" ] ],
+				[ [ "c206", "d107" ], [ "c206", "d107" ], [ "c206", "d107" ], [ "c206", "d107" ], [ "c206", "d107" ] ],
+				[ [ "c202", "d224" ], [ "c202", "d224" ], [ "c202", "d224" ], [ "d222" ], [ "d222" ] ],
 				[ [ "d117", "d215" ], [ "d117", "d215" ], [ "d117", "d215" ], [ "d117", "d215" ], [ "d117", "d215" ] ],
-				[ [ "d223", "d226" ], [ "d223", "d226" ], [ "d223", "d226" ], [ "d223", "d226" ], [ "d223", "d226" ] ]
+				[ [ "d222", "d226" ], [ "d222", "d226" ], [ "d222", "d226" ], [ "d222", "d226" ], [ "d222", "d226" ] ]
 			]
 		},
 		{
@@ -691,10 +737,10 @@
 				[ "CONS2", "CONS2", "CONS2" ]
 			],
 			"salas": [
-				[ [ "c203", "d222" ], [ "c203", "d222" ], [ "c203", "d222" ], [ "c203", "d222" ], [ "c203", "d222" ] ],
-				[ [ "d213" ], [ "d213" ], [ "c207" ], [ "c207" ], [ "c207" ] ],
+				[ [ "c203", "c209" ], [ "c203", "c209" ], [ "c203", "c209" ], [ "c203", "c209" ], [ "c203", "c209" ] ],
+				[ [ "d203" ], [ "d203" ], [ "c202" ], [ "c202" ], [ "c202" ] ],
 				[ [ "d213" ], [ "d213" ], [ "d213" ], [ "d213" ], [ "d213" ] ],
-				[ [ "c208" ], [ "c208" ], [ "c208" ], [ "d213" ], [ "d213" ] ],
+				[ [ "c208", "d220" ], [ "c208", "d220" ], [ "c208", "d220" ], [ "d213" ], [ "d213" ] ],
 				[ [ "c207", "d224" ], [ "c207", "d224" ], [ "c207", "d224" ] ]
 			]
 		},
@@ -711,6 +757,21 @@
 				[ [ "d211", "d217" ], [ "d211", "d217" ], [ "d211" ], [ "d211" ], [ "d211" ] ],
 				[ [ "c206" ], [ "c206" ], [ "d213" ], [ "d213" ], [ "d213" ] ],
 				[ [ "d211" ], [ "d211" ], [ "d213" ], [ "d213" ], [ "d213" ] ]
+			]
+		},
+		{
+			"turma": "EE9",
+			"aulas": [
+				[ "SIPOT", "SIPOT", "SIPOT", "SIPOT", "SIPOT" ],
+				[ "PREMA", "PREMA", "PREMA", "COGER", "COGER" ],
+				[ "PROJ1", "PROJ1", "PROJ1" ],
+				[ "MODSE", "MODSE", "MODSE", "CONTA", "CONTA" ]
+			],
+			"salas": [
+				[ [ "d117" ], [ "d117" ], [ "d117" ], [ "d117" ], [ "d117" ] ],
+				[ [ "c203" ], [ "c203" ], [ "c203" ], [ "d223" ], [ "d223" ] ],
+				[ [ "d223" ], [ "d223" ], [ "d223" ] ],
+				[ [ "c207" ], [ "c207" ], [ "c207" ], [ "c207" ], [ "c207" ] ]
 			]
 		}
 	]
