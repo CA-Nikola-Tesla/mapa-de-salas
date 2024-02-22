@@ -220,7 +220,7 @@ function show_sala(sala_n) {
 }
 
 function show_disc_info(sigla) {
-	if (sigla ===undefined) {
+	if (sigla === undefined) {
 		el("materiaspan").innerText = "Não há aula neste horário";
 		el("professorspan").innerText = "";
 	} else {
@@ -245,6 +245,10 @@ function show_disc_info(sigla) {
 		el("professorspan").innerText = "Prof" + (professores.length > 1 ? "s" : "") + ".: " + professores.join(", ");
 	}
 	el("infodiv").style.removeProperty("display");
+}
+
+function hide_disc_info() {
+	el("infodiv").style.setProperty("display", "none");
 }
 
 function change_select_sala(idx) {
@@ -619,7 +623,7 @@ function selhora_agora() {
 }
 
 function search_sala() {
-	var in_name = prompt("Buscar sala por número");
+	var in_name = prompt("Digite uma sala para localizar no mapa");
 	console.log("search: " + in_name);
 	if (in_name === null)
 		return;
@@ -634,7 +638,16 @@ function search_sala() {
 		return
 	}
 
+	el("divselectdate").style.setProperty("display", "none");
+	hide_disc_info();
 	show_sala(sname.toLowerCase());
+	el("divsearchback").style.removeProperty("display");
+}
+
+function exit_search_sala() {
+	el("divselectdate").style.removeProperty("display");
+	el("divsearchback").style.setProperty("display", "none");
+	evt_change_sala();
 }
 
 function load_version() {

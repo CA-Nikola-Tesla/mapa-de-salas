@@ -8,17 +8,25 @@
 	</head>
 	<body>
 		<div id="selectdiv" style="display: none">
-			<fieldset id="selectset" disabled="disabled">
-				<select id="selturma"></select>
-				<select id="seldia"></select>
-				<select id="selhora"></select>
-				<select style="display: none" id="selsala"></select>
-				<span id="spansearch" style="display: none">
+			<div id="divselectdate">
+				<fieldset id="selectset" disabled="disabled">
+					<select id="selturma"></select>
+					<select id="seldia"></select>
+					<select id="selhora"></select>
+					<select style="display: none" id="selsala"></select>
+					<span id="spansearch">
+					&nbsp; &nbsp;
+					<a href="#" onclick="javascript:search_sala()">&#x1F50D;</a>
+					</span>
+				</fieldset>
+			</div>
+			<div id="divsearchback" style="display: none">
+				<br />
+				<a href="#" onclick="javascript:exit_search_sala()">Voltar</a>
 				&nbsp; &nbsp;
 				<a href="#" onclick="javascript:search_sala()">&#x1F50D;</a>
-				</span>
-			</fieldset>
-			<div id="divsearchback" style="display: none">Voltar</div>
+				<br />
+			</div>
 		</div>
 		<div id="loadingdiv"><br />Carregando...<br /></div>
 		<div id="errordiv" style="display: none">Dados indisponíveis</div>
