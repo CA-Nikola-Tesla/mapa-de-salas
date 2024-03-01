@@ -333,6 +333,13 @@ function load_map() {
 }
 
 function init_system() {
+	if (navigator.serviceWorker) {
+		var url_path = window.location.pathname.replace(/[^/]*$/, '');
+		console.log("Registering serviceWorker...");
+		navigator.serviceWorker.register(url_path + 'sw.js', {scope: url_path });
+	} else {
+		console.log("serviceWorker not available");
+	}
 	load_map();
 	load_version();
 }
@@ -657,8 +664,12 @@ function load_version() {
 		{
 			var date = new Date(res[0].created_at);
 			el("spanversion").innerHTML = "Última atualização: " +
-				"<a target=_blank href='https://github.com/CA-Nikola-Tesla/mapa-de-salas/commit/" + res[0].sha + "'>" +
-				date.toLocaleString("pt-BR") + "</a>";
+				"<a target=_blank href='https://github.com/CA-Nikola-Tesla/mapa-de-salas/commit/" + res[0].sha + "'>"
+				+ date.toLocaleString("pt-BR") + "</a>";
+			localStorage["last_fetch"] = new Date().toLocaleString("pt-BR");
 		}
-	);
+	).catch(() => {
+		console.log("We are offline");
+		el("spanversion").innerHTML = "Trabalhando Offline - versão de " + localStorage["last_fetch"];
+	});
 }
