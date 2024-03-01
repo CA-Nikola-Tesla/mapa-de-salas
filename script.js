@@ -3,6 +3,16 @@ var map;
 var cbloco;
 var table;
 
+var working_offline = false;
+
+function fetch_force(url) {
+	var suffix = '';
+	if (!working_offline)
+		suffix = '?' + Math.random();
+
+	return fetch(url);
+}
+
 function el(id) {
 	return document.getElementById(id);
 }
@@ -305,7 +315,7 @@ function set_sala_display(sala_n, view) {
 
 function load_map() {
 	console.log("requesting map...")
-	fetch("ifsp.svg?" + Math.random()).then(r => r.text()).then(
+	fetch("ifsp.svg").then(r => r.text()).then(
 		t => {
 			console.log("map loaded");
 			var xml = new DOMParser().parseFromString(t, "image/svg+xml");
@@ -317,7 +327,7 @@ function load_map() {
 			map.setAttribute("viewBox", "40 90 120 150");
 			map.setAttribute("class", "map3d");
 			console.log("requesting table...");
-			fetch("tabela.json?" + Math.random()).then(response => response.json()).then(data => {
+			fetch("tabela.json").then(response => response.json()).then(data => {
 				table = data;
 				console.log("table loaded");
 				init_table();
@@ -340,8 +350,8 @@ function init_system() {
 	} else {
 		console.log("serviceWorker not available");
 	}
-	load_map();
 	load_version();
+	load_map();
 }
 
 function reset_map() {
@@ -667,8 +677,10 @@ function load_version() {
 				"<a target=_blank href='https://github.com/CA-Nikola-Tesla/mapa-de-salas/commit/" + res[0].sha + "'>"
 				+ date.toLocaleString("pt-BR") + "</a>";
 			localStorage["last_fetch"] = new Date().toLocaleString("pt-BR");
+			working_offline = false;
 		}
 	).catch(() => {
+		working_offline = true;
 		console.log("We are offline");
 		el("spanversion").innerHTML = "Trabalhando Offline - versão de " + localStorage["last_fetch"];
 	});
