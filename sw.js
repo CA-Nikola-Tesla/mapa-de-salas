@@ -3,7 +3,7 @@
 var URL_PATH = self.location.pathname.replace(/[^/]*$/, '')
 
 var APP_PREFIX = 'MapaDeSalas_'         // Identifier for this app (this needs to be consistent across every cache update)
-var VERSION = 'version_01'              // Version of the off-line cache (change this value everytime you want to update cache)
+var VERSION = 'version_02'              // Version of the off-line cache (change this value everytime you want to update cache)
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [                            // Add URL you want to cache in this list.
 	URL_PATH,
@@ -19,19 +19,17 @@ var URLS = [                            // Add URL you want to cache in this lis
 self.addEventListener('fetch', function (e) {
   console.log('fetch request : ' + e.request.url)
   e.respondWith(
-    caches.match(e.request).then(function (request) {
-      if (request) { // if cache is available, respond with cache
-        console.log('responding with cache : ' + e.request.url)
-        return request
-      } else {       // if there are no cache, try fetching request
-        console.log('file is not cached, fetching : ' + e.request.url)
-        return fetch(e.request)
-      }
-
-      // You can omit if/else for console.log & put one line below like this too.
-      // return request || fetch(e.request)
+    fetch(e.request).then(function(res) {
+      console.log('returning online');
+      return caches.open(CACHE_NAME).then(function(cache) {
+        cache.put(e.request.url, res.clone());
+        return res;
+      });
+    }).catch(function(err) {
+      console.log('returning cached');
+      return caches.match(e.request);
     })
-  )
+  );
 })
 
 // Cache resources
