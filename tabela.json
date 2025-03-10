@@ -34,21 +34,22 @@
 			"sigla": "SPOFIT1",
 			"nome": "FÍSICA TEÓRICA E EXPERIMENTAL",
 			"professores": [
-				"Daniel Moura",
-				"Gustavo Killner"
+				"Jose Paulo",
+				"Marcio Corrallo"
 			]
 		},
 		{
 			"sigla": "SPOCAL1",
 			"nome": "CÁLCULO DIFERENCIAL E INTEGRAL 1",
 			"professores": [
-				"Ricardo Batista"
+				"Marcela Alves"
 			]
 		},
 		{
 			"sigla": "SPODETC",
 			"nome": "DESENHO TÉCNICO AUXILIADO POR COMPUTADOR",
 			"professores": [
+				"Daniel Pedro",
 				"Marcos Guimaraes"
 			]
 		},
@@ -56,7 +57,7 @@
 			"sigla": "SPOCOMX",
 			"nome": "COMUNICAÇÃO E EXPRESSÃO",
 			"professores": [
-				"Tais Silva"
+				"Alice Santos"
 			]
 		},
 		{
@@ -64,7 +65,7 @@
 			"nome": "INTRODUÇÃO À ENGENHARIA ELÉTRICA",
 			"professores": [
 				"Tarcisio Leao",
-				"Wagner Aguiar"
+				"Carlos Tapia"
 			]
 		},
 		{
@@ -72,14 +73,14 @@
 			"nome": "ELETRICIDADE",
 			"professores": [
 				"Alexandre Ventieri",
-				"Wagner Aguiar"
+				"Carlos Tapia"
 			]
 		},
 		{
 			"sigla": "SPOGAVE",
 			"nome": "GEOMETRIA ANALÍTICA E VETORIAL",
 			"professores": [
-				"Marcela Alves"
+				"Gabriela Cotrim"
 			]
 		},
 
