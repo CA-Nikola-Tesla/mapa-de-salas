@@ -150,7 +150,8 @@
 			"sigla": "SPOQUTE",
 			"nome": "QUÍMICA TEÓRICA E EXPERIMENTAL",
 			"professores": [
-				"Gabriela Santiago"
+				"Gabriela Santiago",
+				"Riad Lourenço"
 			]
 		},
 		{
@@ -187,14 +188,14 @@
 			"sigla": "SPOCIEM",
 			"nome": "CIÊNCIA DOS MATERIAIS",
 			"professores": [
-				"Sara Santos"
+				"Maria Grande"
 			]
 		},
 		{
 			"sigla": "SPOMECB",
 			"nome": "MECÂNICA APLICADA BÁSICA",
 			"professores": [
-				"Rogerio Erbereli"
+				"Jorge Ribeiro"
 			]
 		},
 
@@ -276,22 +277,22 @@
 			]
 		},
 		{
-			"sigla": "INSTI",
+			"sigla": "INSI",
 			"nome": "INSTALAÇÕES ELÉTRICAS INDUSTRIAIS",
 			"professores": [
 				"Jacyro Junior",
-				"Mario Cambraia"
+				"Alexandre Ventieri"
 			]
 		},
 		{
-			"sigla": "ADMIN",
-			"nome": "TEORIA GERAL DA ADMINISTRAÇÃO",
+			"sigla": "DICE",
+			"nome": "DIREITO, CIDADANIA E ÉTICA",
 			"professores": [
-				"Antonio Faricelli"
+				"Carla Arantes"
 			]
 		},
 		{
-			"sigla": "MAQEL",
+			"sigla": "MAQE",
 			"nome": "MÁQUINAS ELÉTRICAS",
 			"professores": [
 				"Alaor Saccomano",
@@ -302,8 +303,15 @@
 			"sigla": "COMAE",
 			"nome": "COMANDO E ACIONAMENTO ELÉTRICOS",
 			"professores": [
-				"Helio Kiessling",
+				"Helio Fritz",
 				"Marcos Kurata"
+			]
+		},
+		{
+			"sigla": "FEFI",
+			"nome": "FUNDAMENTOS ECONÔMICOS E FINANCEIROS",
+			"professores": [
+				Maria Suzumura",
 			]
 		},
 
@@ -423,8 +431,7 @@
 			"sigla": "CONS2",
 			"nome": "CONTROLE E SERVOMECANISMO 2",
 			"professores": [
-				"Caio Chinelato",
-				"Hugo Magalhaes"
+				"Caio Chinelato"
 			]
 		},
 
@@ -495,7 +502,7 @@
 			"nome": "PROJETOS 1",
 			"professores": [
 				"Tarcisio Leao",
-				"Wagner Aguiar"
+				"Carlos Tapia"
 			]
 		},
 		{
@@ -516,8 +523,7 @@
 			"sigla": "MODSE",
 			"nome": "MODELAGEM DE SISTEMAS ELÉTRICOS",
 			"professores": [
-				"Joao Brito",
-				"Walter Ragnev"
+				"Joao Brito"
 			]
 		},
 		{
@@ -669,11 +675,11 @@
 				[ "SPOCIEM", "SPOCIEM", "SPOMECB", "SPOMECB", "SPOMECB" ]
 			],
 			"salas": [
-				[ [ "a319" ], [ "a319" ], [ "a319" ], [ "a319" ], [ "a319" ] ],
+				[ [ " A314" ], [ " A314" ], [ " A314" ], [ " A314" ], [ " A314" ] ],
 				[ [ "c207", "c208" ], [ "c207", "c208" ], [ "c207", "c208" ], [ "c207", "c208" ], [ "c207", "c208" ] ],
-				[ [ "c206", "d216" ], [ "c206", "d216" ], [ "c206", "d216" ], [ "c206", "d216" ], [ "c206", "d216" ] ],
+				[ [ "c2064", "d214" ], [ "c204", "d214" ], [ "c204", "d214" ], [ "c204", "d214" ], [ "c204", "d214" ] ],
 				[ [ "c206" ], [ "c206" ], [ "c206" ], [ "c206" ], [ "c206" ] ],
-				[ [ "c209" ], [ "c209" ], [ "f805" ], [ "f805" ], [ "f805" ] ]
+				[ [ "d119" ], [ "d119" ], [ "f805" ], [ "f805" ], [ "f805" ] ]
 			]
 		},
 		{
@@ -698,17 +704,17 @@
 			"aulas": [
 				[ "LUMIN", "LUMIN", "EMAG2", "EMAG2", "EMAG2" ],
 				[ "CIEL2", "CIEL2", "CIEL2", "CIEL2", "CIEL2" ],
-				[ "INSTI", "INSTI", "INSTI", "ADMIN", "ADMIN" ],
-				[ "MAQEL", "MAQEL", "MAQEL", "MAQEL", "MAQEL" ],
-				[ "COMAE", "COMAE", "COMAE", "COMAE", "COMAE" ]
+				[ "INSI", "INSI", "INSI", "FEFI", "FEFI" ],
+				[ "MAQE", "MAQE", "MAQE", "MAQE", "MAQE" ],
+				[ "COMAE", "COMAE", "COMAE", "DICE", "DICE" ]
 
 			],
 			"salas": [
-				[ [ "d215" ], [ "d215" ], [ "d215" ], [ "d215" ], [ "d215" ] ],
-				[ [ "c206", "d107" ], [ "c206", "d107" ], [ "c206", "d107" ], [ "c206", "d107" ], [ "c206", "d107" ] ],
-				[ [ "c202", "d224" ], [ "c202", "d224" ], [ "c202", "d224" ], [ "d222" ], [ "d222" ] ],
+				[ [ "c107" ], [ "c107" ], [ "d215" ], [ "d215" ], [ "d215" ] ],
+				[ [ "c206", "d109" ], [ "c206", "d109" ], [ "c206", "d109" ], [ "c206", "d109" ], [ "c206", "d109" ] ],
+				[ [ "c202", "d219" ], [ "c202", "d219" ], [ "c202", "d219" ], [ "d222" ], [ "d222" ] ],
 				[ [ "d117", "d215" ], [ "d117", "d215" ], [ "d117", "d215" ], [ "d117", "d215" ], [ "d117", "d215" ] ],
-				[ [ "d222", "d226" ], [ "d222", "d226" ], [ "d222", "d226" ], [ "d222", "d226" ], [ "d222", "d226" ] ]
+				[ [ "d222", "d226" ], [ "d222", "d226" ], [ "d222", "d226" ], [ "d203" ], [ "d203" ] ]
 			]
 		},
 		{
@@ -738,11 +744,11 @@
 				[ "CONS2", "CONS2", "CONS2" ]
 			],
 			"salas": [
-				[ [ "c203", "c209" ], [ "c203", "c209" ], [ "c203", "c209" ], [ "c203", "c209" ], [ "c203", "c209" ] ],
-				[ [ "d203" ], [ "d203" ], [ "c202" ], [ "c202" ], [ "c202" ] ],
+				[ [ "c203", "d222" ], [ "c203", "d222" ], [ "c203", "d222" ], [ "c203", "d222" ], [ "c203", "d222" ] ],
+				[ [ "d220" ], [ "d220" ], [ "c203" ], [ "c203" ], [ "c203" ] ],
 				[ [ "d213" ], [ "d213" ], [ "d213" ], [ "d213" ], [ "d213" ] ],
-				[ [ "c208", "d220" ], [ "c208", "d220" ], [ "c208", "d220" ], [ "d213" ], [ "d213" ] ],
-				[ [ "c207", "d224" ], [ "c207", "d224" ], [ "c207", "d224" ] ]
+				[ [ "d220" ], [ "d220" ], [ "d220" ], [ "d213" ], [ "d213" ] ],
+				[ [ "c209", "d224" ], [ "c209", "d224" ], [ "c209", "d224" ] ]
 			]
 		},
 		{
@@ -770,9 +776,9 @@
 			],
 			"salas": [
 				[ [ "d205" ], [ "d205" ], [ "d205" ], [ "d205" ], [ "d205" ] ],
-				[ [ "d220", "d221" ], [ "d220", "d221" ], [ "d220", "d221" ], [ "d223" ], [ "d223" ] ],
+				[ [ "d221" ], [ "d221" ], [ "d221" ], [ "d223" ], [ "d223" ] ],
 				[ [ "c206" ], [ "c206" ], [ "c206" ] ],
-				[ [ "c207" ], [ "c207" ], [ "c207" ], [ "d203" ], [ "d203" ] ]
+				[ [ "c207" ], [ "c207" ], [ "c207" ], [ "d205" ], [ "d205" ] ]
 			]
 		}
 	]
